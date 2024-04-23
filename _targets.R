@@ -83,8 +83,7 @@ list(
   ),
   tar_render(
     name = Rapport,
-    path = "./rapport/rapport.rmd",
-    priority = 0
+    path = "./rapport/rapport.rmd"
   )
 )
 
