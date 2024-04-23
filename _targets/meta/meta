@@ -1,5 +1,4 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
-<<<<<<< HEAD
 9f14da9c247a99c984cb3fcc0262569693f4d146|||||||||||||||||
 ass_tsn|function|19afa569ac6a3029|||||||||||||||
 bd|stem|67e3bcd8537f6d6b|827e697fd7255565|32038b0cfaa30e20|2114031734||t19836.6302853886s|a1c456b03adbfbf8|44|rds|local|vector|||0.01||
@@ -29,7 +28,6 @@ table_sql|stem|b4fb00f320ed46a6|6dfbd43d00d06db7|0ff7f98648b32d94|-1840868723||t
 valid_sql|stem|b4fb00f320ed46a6|862b7b6e90adc904|4af394fd74aaaef6|-209517275||t19836.8043183513s|ba41eabafff2540f|48|rds|local|vector|||7.27||
 validation_sql|function|2925356f6a501a21|||||||||||||||
 |||||||||||||||||
-=======
 ass_tsn|function|413c572a53cfcd58|||||||||||||||
 bd_clean|stem|bb311e71a382d279|95f7d3d1242fd12c|1265873546da4521|-1388784645||t19836.8487718499s|282bacf86fd35cea|412453|rds|local|vector|||0.59||
 bd_oiseaux|stem|fe0b90992cc7966d|a203452916091c98|550575ba72ee401a|-1348489503||t19836.8487622298s|8ae827784f30ac04|462789|rds|local|vector|||3.78||
@@ -51,4 +49,4 @@ read_d|function|9b8499dce7cdb2cc|||||||||||||||
 table_sql|stem|b4fb00f320ed46a6|98840041455db89c|94a436d6f0c8181c|-1840868723||t19836.8522460267s|ba41eabafff2540f|48|rds|local|vector|||0.44|Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows|
 valid_sql|stem|b4fb00f320ed46a6|862b7b6e90adc904|4af394fd74aaaef6|-209517275||t19836.8276190981s|ba41eabafff2540f|48|rds|local|vector|||7.75||
 validation_sql|function|ee84a7ed0f6245b9|||||||||||||||
->>>>>>> 2ddd1d21aba0491de225e7400b5238af0994e355
+2ddd1d21aba0491de225e7400b5238af0994e355
