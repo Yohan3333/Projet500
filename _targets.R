@@ -21,7 +21,7 @@ library(stringr)
 # ===========================================
 # _targets.R file
 source("./fonctions/assemblage_modif.R")
-#source("./fonctions/nettoyage.R")
+source("./fonctions/nettoyage.R")
 #source("./fonctions/assemblage_tsn.R")
 #source("./fonctions/Table.R")
 #source("./fonctions/Valid_SQL.R")
