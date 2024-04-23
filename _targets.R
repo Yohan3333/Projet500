@@ -26,9 +26,9 @@ source("./fonctions/nettoyage.R")
 source("./fonctions/assemblage_tsn.R")
 source("./fonctions/Table.R")
 source("./fonctions/Valid_SQL.R")
-source("./fonctions/Figures2.R")
+source("./fonctions/Fig1.R")
+source("./fonctions/Fig2.R")
 source("./fonctions/Fig3.R")
-source("./fonctions/Fig4.R")
 # ===========================================
 # Dépendances
 
@@ -77,4 +77,3 @@ list(
     command = creation_Fig4(bd_tsn)
   )
 )
-
