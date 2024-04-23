@@ -12,9 +12,13 @@ nombre_especes_par_annee <- bd %>%
   group_by(annee) %>%
   summarise(nombre_especes = n_distinct(valid_scientific_name))
 
+png("Figure3.png", width=1000, height=600)
+
 # Créer le graphique
 ggplot(nombre_especes_par_annee, aes(x = annee, y = nombre_especes)) +
   geom_bar(stat = "identity", fill = "skyblue") +
   labs(x = "Année", y = "Nombre d'espèces uniques", title = "Nombre d'espèces uniques par année") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotation des étiquettes sur l'axe des x
+
+dev.off()
 }
