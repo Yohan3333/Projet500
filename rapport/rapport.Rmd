@@ -1,17 +1,17 @@
 ---
-title: Travail de session BOT500
-
-Une abondance d’oiseaux du Nord au Sud du Québec
-
+title: "Travail de session BOT500 - Une abondance d’oiseaux du Nord au Sud du Québec"
 author:
-  - name: Frédérick St-Pierre
-    affiliation: stpf2507
-  - name: Yohan Wegener
-    affiliation: wegy1101
-  - name: Félix Labbé
-    affiliation: labfXXXX
-  - name: Aurel Veillet
-    affiliation: veiaXXXX
+  - name: "Frédérick St-Pierre"
+    affiliation: "stpf2507"
+  - name: "Yohan Wegener"
+    affiliation: "wegy1101"
+  - name: "Félix Labbé"
+    affiliation: "labfXXXX"
+  - name: "Aurel Veillet"
+    affiliation: "veiaXXXX"
+output: 
+  pdf_document: 
+    toc: true
 ---
 Résumé: |
   Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text.

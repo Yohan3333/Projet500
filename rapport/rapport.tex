@@ -1,117 +1,108 @@
-\documentclass[9pt,twocolumn,twoside,]{pnas-new}
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\title{Travail de session BOT500 - Une abondance d'oiseaux du Nord au
+Sud du Québec}
+\author{true \and true \and true \and true}
+\date{}
 
-% Use the lineno option to display guide line numbers if required.
-% Note that the use of elements such as single-column equations
-% may affect the guide line number alignment.
-
-
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-
-% tightlist command for lists without linebreak
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Travail de session BOT500 - Une abondance d'oiseaux du Nord au Sud du Québec},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-
-
-% Pandoc citation processing
-\newlength{\cslhangindent}
-\setlength{\cslhangindent}{1.5em}
-\newlength{\csllabelwidth}
-\setlength{\csllabelwidth}{3em}
-\newlength{\cslentryspacingunit} % times entry-spacing
-\setlength{\cslentryspacingunit}{\parskip}
-% for Pandoc 2.8 to 2.10.1
-\newenvironment{cslreferences}%
-  {}%
-  {\par}
-% For Pandoc 2.11+
-\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
- {% don't indent paragraphs
-  \setlength{\parindent}{0pt}
-  % turn on hanging indent if param 1 is 1
-  \ifodd #1
-  \let\oldpar\par
-  \def\par{\hangindent=\cslhangindent\oldpar}
-  \fi
-  % set entry spacing
-  \setlength{\parskip}{#2\cslentryspacingunit}
- }%
- {}
-\usepackage{calc}
-\newcommand{\CSLBlock}[1]{#1\hfill\break}
-\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
-\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
-\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
-
-
-\templatetype{pnasresearcharticle}  % Choose template
-
-\title{Template for preparing your research report submission to PNAS
-using RMarkdown}
-
-\author[a,1,2]{Frédérick St-Pierre}
-\author[a,b]{Bob Security}
-
-  \affil[a]{Some Institute of Technology, Department, Street, City,
-State, Zip}
-  \affil[b]{Another University Department, Street, City, State, Zip}
-
-
-% Please give the surname of the lead author for the running footer
-\leadauthor{Anonymous}
-
-% Please add here a significance statement to explain the relevance of your work
-\significancestatement{Authors must submit a 120-word maximum statement
-about the significance of their research paper written at a level
-understandable to an undergraduate educated scientist outside their
-field of speciality. The primary goal of the Significance Statement is
-to explain the relevance of the work in broad context to a broad
-readership. The Significance Statement appears in the paper itself and
-is required for all research papers.}
-
-
-\authorcontributions{Please provide details of author contributions
-here.}
-
-\authordeclaration{Please declare any conflict of interest here.}
-
-\equalauthors{\textsuperscript{1} A.O.(Author One) and A.T. (Author Two)
-contributed equally to this work (remove if not applicable).}
-
-\correspondingauthor{\textsuperscript{2} To whom correspondence should
-be addressed. E-mail:
-\href{mailto:bob@email.com}{\nolinkurl{bob@email.com}}}
-
-% Keywords are not mandatory, but authors are strongly encouraged to provide them. If provided, please include two to five keywords, separated by the pipe symbol, e.g:
- \keywords{  one |  two |  optional |  optional |  optional  } 
-
-\begin{abstract}
-Please provide an abstract of no more than 250 words in a single
-paragraph. Abstracts should explain to the general reader the major
-contributions of the article. References in the abstract must be cited
-in full within the abstract itself and cited in the text.
-\end{abstract}
-
-\dates{This manuscript was compiled on \today}
-\doi{\url{www.pnas.org/cgi/doi/10.1073/pnas.XXXXXXXXXX}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
 
 \begin{document}
-
-% Optional adjustment to line up main text (after abstract) of first page with line numbers, when using both lineno and twocolumn options.
-% You should only change this length when you've finalised the article contents.
-\verticaladjustment{-2pt}
-
-
-
 \maketitle
-\thispagestyle{firststyle}
-\ifthenelse{\boolean{shortarticle}}{\ifthenelse{\boolean{singlecolumn}}{\abscontentformatted}{\abscontent}}{}
 
-% If your first paragraph (i.e. with the \dropcap) contains a list environment (quote, quotation, theorem, definition, enumerate, itemize...), the line after the list may have some extra indentation. If this is the case, add \parshape=0 to the end of the list environment.
+{
+\setcounter{tocdepth}{2}
+\tableofcontents
+}
+Résumé: \textbar{} Please provide an abstract of no more than 250 words
+in a single paragraph. Abstracts should explain to the general reader
+the major contributions of the article. References in the abstract must
+be cited in full within the abstract itself and cited in the text.
 
-\acknow{Please include your acknowledgments here, set in a single
-paragraph. Please do not include any acknowledgments in the Supporting
-Information, or anywhere else in the manuscript.}
+significance: \textbar{} Ce travail a été réalisé dans le cadre du cours
+BOT500 par des étudiants au BAC en écologie.
+
+keywords: - diversité - Paruline - Latitude
+
+\hypertarget{must-be-one-of-pnasresearcharticle-usual-two-column-layout-pnasmathematics-one-column-layout-or-pnasinvited-invited-submissions-only}{%
+\subsection{must be one of: pnasresearcharticle (usual two-column
+layout), pnasmathematics (one column layout), or pnasinvited (invited
+submissions
+only)}\label{must-be-one-of-pnasresearcharticle-usual-two-column-layout-pnasmathematics-one-column-layout-or-pnasinvited-invited-submissions-only}}
+
+pnas\_type: pnasresearcharticle
+
+bibliography: pnas-sample.bib csl: pnas.csl
+
+\hypertarget{change-to-true-to-add-optional-line-numbering}{%
+\subsection{change to true to add optional line
+numbering}\label{change-to-true-to-add-optional-line-numbering}}
+
+lineno: false
+
+\hypertarget{output-rticlespnas_article}{%
+\subsection{output:
+rticles::pnas\_article}\label{output-rticlespnas_article}}
 
 This PNAS journal template is provided to help you write your work in
 the correct journal format. Instructions for use are provided below.
@@ -179,11 +170,12 @@ under 39,000 characters (including spaces) for Direct Submissions and
 \addcontentsline{toc}{subsection}{References}
 
 References should be cited in numerical order as they appear in text;
-this will be done automatically via bibtex, e.g. (1) and (2, 3). All
-references, including for the SI, should be included in the main
-manuscript file. References appearing in both sections should not be
-duplicated. SI references included in tables should be included with the
-main reference section.
+this will be done automatically via bibtex, e.g. @belkin2002using and
+@berard1994embedding {[}@coifman2005geometric{]}. All references,
+including for the SI, should be included in the main manuscript file.
+References appearing in both sections should not be duplicated. SI
+references included in tables should be included with the main reference
+section.
 
 \hypertarget{data-archival}{%
 \subsection*{Data Archival}\label{data-archival}}
@@ -347,33 +339,5 @@ published in raw format and will not be edited or composed.
 \showmatmethods
 \showacknow
 \pnasbreak
-
-\hypertarget{refs}{}
-\begin{CSLReferences}{0}{0}
-\leavevmode\vadjust pre{\hypertarget{ref-belkin2002using}{}}%
-\CSLLeftMargin{1. }
-\CSLRightInline{Belkin M, Niyogi P (2002) Using manifold stucture for
-partially labeled classification. \emph{Advances in Neural Information
-Processing Systems}, pp 929--936.}
-
-\leavevmode\vadjust pre{\hypertarget{ref-berard1994embedding}{}}%
-\CSLLeftMargin{2. }
-\CSLRightInline{Bérard P, Besson G, Gallot S (1994) Embedding riemannian
-manifolds by their heat kernel. \emph{Geometric \& Functional Analysis
-GAFA} 4(4):373--398.}
-
-\leavevmode\vadjust pre{\hypertarget{ref-coifman2005geometric}{}}%
-\CSLLeftMargin{3. }
-\CSLRightInline{Coifman RR, et al. (2005) Geometric diffusions as a tool
-for harmonic analysis and structure definition of data: Diffusion maps.
-\emph{Proceedings of the National Academy of Sciences of the United
-States of America} 102(21):7426--7431.}
-
-\end{CSLReferences}
-
-
-
-% Bibliography
-% \bibliography{pnas-sample}
 
 \end{document}
