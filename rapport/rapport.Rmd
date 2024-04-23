@@ -1,54 +1,29 @@
 ---
-title: Template for preparing your research report submission to PNAS using RMarkdown
+title: Travail de session BOT500
 
-# Use letters for affiliations, numbers to show equal authorship (if applicable) and to indicate the corresponding author
+Une abondance d’oiseaux du Nord au Sud du Québec
+
 author:
   - name: Frédérick St-Pierre
-    affiliation: a,1,2
-  - name: Bob Security
-    affiliation: a,b
-address:
-  - code: a
-    address: Some Institute of Technology, Department, Street, City, State, Zip
-  - code: b
-    address: Another University Department, Street, City, State, Zip
+    affiliation: stpf2507
+  - name: Yohan Wegener
+    affiliation: wegy1101
+  - name: Félix Labbé
+    affiliation: labfXXXX
+  - name: Aurel Veillet
+    affiliation: veiaXXXX
 
-corresponding_author:
-  code: 2
-  text: "To whom correspondence should be addressed. E-mail: bob@email.com"
-
-# For footer text
-lead_author_surname: Anonymous
-
-## Remove this if not required    
-equal_authors:
-  code: 1
-  text: "A.O.(Author One) and A.T. (Author Two) contributed equally to this work (remove if not applicable)."
-
-
-author_contributions: |
-  Please provide details of author contributions here.
-
-## Remove this if not required
-conflict_of_interest: |
-  Please declare any conflict of interest here.
-
-abstract: |
+Résumé: |
   Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text.
 
 
 significance: |
-  Authors must submit a 120-word maximum statement about the significance of their research paper written at a level understandable to an undergraduate educated scientist outside their field of speciality. The primary goal of the Significance Statement is to explain the relevance of the work in broad context to a broad readership. The Significance Statement appears in the paper itself and is required for all research papers.
-
-acknowledgements: |
-  Please include your acknowledgments here, set in a single paragraph. Please do not include any acknowledgments in the Supporting Information, or anywhere else in the manuscript.
+  Ce travail a été réalisé dans le cadre du cours BOT500 par des étudiants au BAC en écologie.
 
 keywords:
-  - one
-  - two
-  - optional
-  - optional
-  - optional
+  - diversité
+  - Paruline
+  - Latitude
 
 ## must be one of: pnasresearcharticle (usual two-column layout), pnasmathematics (one column layout), or pnasinvited (invited submissions only)
 pnas_type: pnasresearcharticle
@@ -148,7 +123,7 @@ PNAS does not take responsibility for or endorse these services, and
 their use has no bearing on acceptance of a manuscript for publication.
 
 ![Placeholder image of a frog with a long example caption to show
-justification setting.<span data-label="fig:frog"></span>](frog.png)
+justification setting.<span data-label="fig:frog"></span>](Figure2.png)
 
 Digital Figures {#sec:figures .unnumbered}
 ---------------
