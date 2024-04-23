@@ -29,6 +29,7 @@ source("./fonctions/Valid_SQL.R")
 source("./fonctions/Fig1.R")
 source("./fonctions/Fig2.R")
 source("./fonctions/Fig3.R")
+source("./fonctions/Fig4.R")
 # ===========================================
 # Dépendances
 
@@ -75,5 +76,10 @@ list(
   tar_target(
     name=Fig3,
     command = creation_Fig3(bd_tsn)
+  ),
+  tar_target(
+    name=Fig4,
+    command = creation_Fig4(bd_tsn)
   )
 )
+
