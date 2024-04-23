@@ -84,6 +84,7 @@ list(
   tar_render(
     name = Rapport,
     path = "./rapport/rapport.rmd",
-    depends = Fig2
+    priority = 0
   )
 )
+
