@@ -80,6 +80,9 @@ list(
   tar_target(
     name=Fig4,
     command = creation_Fig4(bd_tsn)
+  ),
+  tar_render(
+    name = Rapport,
+    path = "./rapport/rapport.rmd"
   )
 )
-
