@@ -12,18 +12,17 @@ author:
 output: 
   pdf_document: 
     toc: true
----
-Résumé: |
-  Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text.
 
+Résumé: 
+"Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text."
 
-Significance: |
-  Ce travail a été réalisé dans le cadre du cours BOT500 par des étudiants au BAC en écologie.
+Significance: 
+"Ce travail a été réalisé dans le cadre du cours BOT500 par des étudiants au BAC en écologie."
 
 keywords:
-  - Diversité
-  - Paruline
-  - Québec
+  - "Diversité"
+  - "Paruline"
+  - "Québec"
 
 ## must be one of: pnasresearcharticle (usual two-column layout), pnasmathematics (one column layout), or pnasinvited (invited submissions only)
 pnas_type: pnasresearcharticle
@@ -36,84 +35,77 @@ lineno: false
 
 output: rticles::pnas_article
 ---
+## Introduction:
+"Afin de comprendre la dynamique de la biodiversité aviaire du Québec sur une 
+période donnée, nous avons établi une question générale composée deux 
+sous-questions nous permettant d’y parvenir : Y a-t-il une corrélation entre la
+richesse spécifique et l’abondance des espèces d’oiseaux au Québec?  
 
+Quelle est la tendance de la richesse aviaire spécifique du Québec de 2016 à 
+2020 ?  
 
-This PNAS journal template is provided to help you write your work in the
-correct journal format. Instructions for use are provided below.
+Quelle est la tendance d'abondance selon la latitude? 
 
-Note: please start your introduction without including the word
-"Introduction" as a section heading (except for math articles in the
-Physical Sciences section); this heading is implied in the first
-paragraphs.
+La première question cherche à établir s'il existe une corrélation entre la 
+richesse spécifique (le nombre total d'espèces) et l'abondance (la quantité 
+relative de chaque espèce). Comprendre cette relation est crucial pour évaluer 
+la santé globale d'un écosystème et comment il pourrait être affecté par des 
+changements environnementaux. 
 
-Guide to using this template {.unnumbered}
-========================================
+La deuxième question cherche à analyser la tendance de la richesse aviaire 
+spécifique dans la région du Québec au cours des années 2016 à 2020. Cette 
+analyse temporelle permettrait de détecter des changements survenus dans la 
+diversité des espèces aviaires au fil du temps, ce qui pourrait être lié à des 
+facteurs tels que le changement climatique, la dégradation de l'habitat ou 
+d'autres pressions environnementales. 
 
-Please note that whilst this template provides a preview of the typeset
-manuscript for submission, to help in this preparation, it will not
-necessarily be the final publication layout. For more detailed
-information please see the [PNAS Information for
-Authors](http://www.pnas.org/site/authors/format.xhtml).
-
-
-Author Affiliations {#author-affiliations .unnumbered}
--------------------
-
-Include department, institution, and complete address, with the
-ZIP/postal code, for each author. Use lower case letters to match
-authors with institutions, as shown in the example. Authors with an
-ORCID ID may supply this information at submission.
-
-Submitting Manuscripts {#submitting-manuscripts .unnumbered}
-----------------------
-
-All authors must submit their articles at
-[PNAScentral](http://www.pnascentral.org/cgi-bin/main.plex). If you are
-using Overleaf to write your article, you can use the "Submit to PNAS"
-option in the top bar of the editor window.
-
-Format {#format .unnumbered}
-------
-
-Many authors find it useful to organize their manuscripts with the
-following order of sections; Title, Author Affiliation, Keywords,
-Abstract, Significance Statement, Results, Discussion, Materials and
-methods, Acknowledgments, and References. Other orders and headings are
-permitted.
-
-Manuscript Length {#manuscript-length .unnumbered}
------------------
-
-PNAS generally uses a two-column format averaging 67 characters,
-including spaces, per line. The maximum length of a Direct Submission
-research article is six pages and a PNAS PLUS research article is ten
-pages including all text, spaces, and the number of characters displaced
-by figures, tables, and equations. When submitting tables, figures,
-and/or equations in addition to text, keep the text for your manuscript
-under 39,000 characters (including spaces) for Direct Submissions and
-72,000 characters (including spaces) for PNAS PLUS.
-
-References {#references .unnumbered}
+Enfin, la troisième question explore la variabilité saisonnière de la richesse
+aviaire spécifique. La diversité des espèces aviaires varie tout au long de
+l'année à la suite des changements de saison. Les résultats peuvent fournir des 
+informations importantes sur les schémas de migration, les cycles de 
+reproduction et les fluctuations des populations, ce qui est crucial pour la 
+conservation et la gestion des écosystèmes. En somme, ces questions cherchent 
+à éclairer les liens complexes entre la biodiversité aviaire, le temps et 
+l'environnement dans la région du Québec."
 ----------
-
-References should be cited in numerical order as they appear in text;
-this will be done automatically via bibtex, e.g. @belkin2002using and
-@berard1994embedding [@coifman2005geometric]. All references, including
-for the SI, should be included in the main manuscript file. References
-appearing in both sections should not be duplicated. SI references
-included in tables should be included with the main reference section.
-
-Data Archival {#data-archival .unnumbered}
+## Méthode:
+"Les données utilisées dans ce travail représentent la composition et la 
+phénologie sonore des oiseaux au Québec, recueillies dans le cadre d'un 
+programme de surveillance de la biodiversité acoustique mené par le ministère de
+l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune et 
+des Parcs (MELCCFP), dans le contexte du Réseau de suivi de la biodiversité du 
+Québec. Elles répertorient les observations sonores des oiseaux. Les inventaires
+acoustiques sont réalisés au moyen d'enregistreurs sonores qui capturent les 
+cris et les chants des oiseaux. Ces enregistrements représentent des efforts 
+d'échantillonnage et sont ensuite analysés par un spécialiste en taxonomie qui 
+identifie les espèces d'oiseaux enregistrées. Lorsque possible, l'heure de 
+l'observation est également enregistrée (time_obs). Ainsi, ces données ont été 
+analysées grâce au logiciel R afin de créer des figures qui représentent les 
+résultats correspondant aux trois questions énoncées ci-dessus."
 -------------
+## Résultats :  
 
-PNAS must be able to archive the data essential to a published article.
-Where such archiving is not possible, deposition of data in public
-databases, such as GenBank, ArrayExpress, Protein Data Bank, Unidata,
-and others outlined in the Information for Authors, is acceptable.
+"À la suite de la création d’une base de données et des analyses dans RStudio, 
+trois figures ont été créées afin de mieux répondre à nos questions."
 
+"La  \[figure 1\] présente le nombre d’espèce présente en fonction de la latitude 
+du Québec. La régression en bleue permet de voir la moyenne d’espèce unique. 
+Les points présents dans la figure représentent chaque station d’écoute."
+```
+![Figure 1: Nombre d'espèce en fonction de la latitude au Québec](./rapport/Fig1.png)
+```
+"La  \[figure 2\] présente l’abondance des observations de parulines, elle aussi en
+fonction de la latitude. Une régression, en bleue, avec l’incertitude, en gris,
+est observable."
+```
+![Figure 2: Abondance de paruline en fonction de la latitude au Québec](./rapport/Fig2.png)
+```
 
-
-Language-Editing Services {#language-editing-services .unnumbered}
+"La  \[figure 3\] présente le nombre d’espèces uniques observées dans tous les sites
+d’échantillonnages de l’étude pour chaque année, de 2016 à 2020."
+```
+![Figure 3: Nombre d'espèce uniques de tous les sites par année](./rapport/Fig3.png)
+```
 -------------------------
 
 Prior to submission, authors who believe their manuscripts would benefit
