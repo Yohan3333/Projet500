@@ -20,18 +20,18 @@ library(RSQLite)
 library(stringr)
 # ===========================================
 # _targets.R file
-source("assemblage_modif.R")
-source("nettoyage.R")
-source("assemblage_tsn.R")
-source("Table.R")
-source("Valid_SQL.R")
-source("Fig1.R")
-source("Fig2.R")
-source("Fig3.R")
-source("Fig4.R")
+source("./fonctions/assemblage_modif.R")
+source("./fonctions/nettoyage.R")
+source("./fonctions/assemblage_tsn.R")
+source("./fonctions/Table.R")
+source("./fonctions/Valid_SQL.R")
+source("./fonctions/Fig1.R")
+source("./fonctions/Fig2.R")
+source("./fonctions/Fig3.R")
+source("./fonctions/Fig4.R")
 # ===========================================
 # Dépendances
-csv_files <- list.files("./donnes", pattern = "\\.csv$")
+csv_files <- list.files("./donnees", pattern = "\\.csv$")
 bd <- data.frame()
 
 # Scripts R
