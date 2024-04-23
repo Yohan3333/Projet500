@@ -1,27 +1,84 @@
+#Fichier target
 
-setwd("C:/Users/wegen/Desktop/Atelier2")
-
-install.packages("targets")
+#install.packages("targets")
+#install.packages("tarchetypes")
+#install.packages("dplyr")
+#install.packages("lubridate")
+#install.packages("stringr")
+#install.packages("taxize")
+#install.packages("RSQLite")
+#install.packages("visreg")
+#install.packages("ggplot2")
+library(ggplot2)
+library(visreg)
 library(targets)
+library(tarchetypes)
 library(dplyr)
+library(lubridate)
+library(taxize)
+library(RSQLite)
+library(stringr)
 # ===========================================
 # _targets.R file
+source("assemblage_modif.R")
+source("nettoyage.R")
+source("assemblage_tsn.R")
+source("Table.R")
+source("Valid_SQL.R")
+source("Fig1.R")
+source("Fig2.R")
+source("Fig3.R")
+source("Fig4.R")
 # ===========================================
 # Dépendances
-csv_files <- list.files(pattern = "\\.csv$")
+csv_files <- list.files("./donnes", pattern = "\\.csv$")
 bd <- data.frame()
+
 # Scripts R
 
-
-# Cible pour installer les packages
 list(
   tar_target(
-    name=bd,
-    command={
-      source("Script principal_modif.R")
-      bd
-    },
-    format="rds"
+    name= chemin,
+    command = "./donnees",
+  ),
+  tar_target(
+    name= chemin_donnees,
+    command = list.files(chemin, pattern = "\\.csv$", full.names = T)
+  ),
+  tar_target(
+    name = bd_oiseaux,
+    command = read_d(chemin_donnees)
+  ),
+  tar_target(
+    name = bd_clean,
+    command = nettoy(bd_oiseaux)
+  ),
+  tar_target(
+    name = bd_tsn,
+    command = ass_tsn(bd_clean)
+  ),
+  tar_target(
+    name= table_sql,
+    command = create_sql(bd_tsn)
+  ),
+  tar_target(
+    name= valid_sql,
+    command = validation_sql(table_sql)
+  ),
+  tar_target(
+    name = Fig1,
+    command = creation_Fig1(bd_tsn),
+  ),
+  tar_target(
+    name = Fig2,
+    command = creation_Fig2(bd_tsn)
+  ),
+  tar_target(
+    name=Fig3,
+    command = creation_Fig3(bd_tsn)
+  ),
+  tar_target(
+    name=Fig4,
+    command = creation_Fig4(bd_tsn)
   )
 )
-
