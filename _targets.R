@@ -21,7 +21,11 @@ library(stringr)
 # ===========================================
 # _targets.R file
 source("./fonctions/assemblage_modif.R")
+<<<<<<< HEAD
 #source("./fonctions/nettoyage.R")
+=======
+source("./fonctions/nettoyage.R")
+>>>>>>> c43b5c88c67eba9ec2b0ca5d6ac8a574c3cf81d0
 #source("./fonctions/assemblage_tsn.R")
 #source("./fonctions/Table.R")
 #source("./fonctions/Valid_SQL.R")
@@ -33,22 +37,20 @@ source("./fonctions/assemblage_modif.R")
 # Dépendances
 csv_files <- list.files("./donnees", pattern = "\\.csv$")
 
-
 # Scripts R
 
 list(
   tar_target(
     name= chemin,
-    command = "./donnees"
+    command = "./donnees",
   ),
   tar_target(
     name= chemin_donnees,
-    command = list.files(path=chemin, pattern = "\\.csv$", full.names = T)
+    command = list.files(chemin, pattern = "\\.csv$", full.names = T)
   ),
   tar_target(
     name = bd_oiseaux,
-    command = read_d(chemin_donnees),
-    format= "rds"
+    command = read_d(chemin_donnees)
   ),
   tar_target(
     name = bd_clean,
