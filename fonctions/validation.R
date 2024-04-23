@@ -1,3 +1,0 @@
-###SCRIPT validation
-
-summary(bd)
