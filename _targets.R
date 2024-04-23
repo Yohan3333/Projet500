@@ -19,20 +19,18 @@ library(taxize)
 library(RSQLite)
 library(stringr)
 # ===========================================
-# _targets.R file
 source("./fonctions/assemblage_modif.R")
 source("./fonctions/nettoyage.R")
-source("./fonctions/assemblage_tsn.R")
-source("./fonctions/Table.R")
-source("./fonctions/Valid_SQL.R")
-source("./fonctions/Fig1.R")
-source("./fonctions/Fig2.R")
-source("./fonctions/Fig3.R")
-source("./fonctions/Fig4.R")
+#source("./fonctions/assemblage_tsn.R")
+#source("./fonctions/Table.R")
+#source("./fonctions/Valid_SQL.R")
+#source("./fonctions/Fig1.R")
+#source("./fonctions/Fig2.R")
+#source("./fonctions/Fig3.R")
+#source("./fonctions/Fig4.R")
 # ===========================================
 # Dépendances
 csv_files <- list.files("./donnees", pattern = "\\.csv$")
-bd <- data.frame()
 
 # Scripts R
 
