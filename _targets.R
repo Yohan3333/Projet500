@@ -39,15 +39,16 @@ bd <- data.frame()
 list(
   tar_target(
     name= chemin,
-    command = "./donnees",
+    command = "./donnees"
   ),
   tar_target(
     name= chemin_donnees,
-    command = list.files(chemin, pattern = "\\.csv$", full.names = T)
+    command = list.files(path=chemin, pattern = "\\.csv$", full.names = T)
   ),
   tar_target(
     name = bd_oiseaux,
-    command = read_d(chemin_donnees)
+    command = read_d(chemin_donnees),
+    format= "rds"
   ),
   tar_target(
     name = bd_clean,
