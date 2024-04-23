@@ -17,13 +17,13 @@ Résumé: |
   Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text.
 
 
-significance: |
+Significance: |
   Ce travail a été réalisé dans le cadre du cours BOT500 par des étudiants au BAC en écologie.
 
 keywords:
-  - diversité
+  - Diversité
   - Paruline
-  - Latitude
+  - Québec
 
 ## must be one of: pnasresearcharticle (usual two-column layout), pnasmathematics (one column layout), or pnasinvited (invited submissions only)
 pnas_type: pnasresearcharticle
