@@ -15,7 +15,7 @@ creation_Fig4 = function(bd){
   visreg::visreg(model)
   
   ###COURBE DU MODELE
-  png("Figure4.png", width=1000, height=600)
+  png("./rapport/Figure4.png", width=1000, height=600)
   plot(visreg::visreg(model,
                       xlab="Latitude",
                       ylab="Nombre d'espèce",

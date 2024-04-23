@@ -15,7 +15,7 @@ creation_Fig2 = function(bd){
   model3 <- lm(x ~ Latitude, data = parul)
   summary(model3)
   
-  png("Figure2.png", width=1000, height=600)
+  png("./rapport/Figure2.png", width=1000, height=600)
   ### Courbe OBS Parul en fct LAT
   visreg::visreg(model3,
                  xlab="Latitude",
