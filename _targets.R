@@ -32,7 +32,6 @@ source("./fonctions/nettoyage.R")
 # ===========================================
 # Dépendances
 csv_files <- list.files("./donnees", pattern = "\\.csv$")
-
 # Scripts R
 
 list(
@@ -51,33 +50,5 @@ list(
   tar_target(
     name = bd_clean,
     command = nettoy(bd_oiseaux)
-  ),
-  tar_target(
-    name = bd_tsn,
-    command = ass_tsn(bd_clean)
-  ),
-  tar_target(
-    name= table_sql,
-    command = create_sql(bd_tsn)
-  ),
-  tar_target(
-    name= valid_sql,
-    command = validation_sql(table_sql)
-  ),
-  tar_target(
-    name = Fig1,
-    command = creation_Fig1(bd_tsn),
-  ),
-  tar_target(
-    name = Fig2,
-    command = creation_Fig2(bd_tsn)
-  ),
-  tar_target(
-    name=Fig3,
-    command = creation_Fig3(bd_tsn)
-  ),
-  tar_target(
-    name=Fig4,
-    command = creation_Fig4(bd_tsn)
   )
 )
