@@ -3,9 +3,9 @@
 read_d <- function(cvs_files){
 
   data_list <- list()
-
+  
   for (file in csv_files) {
-    file_path <- file.path(getwd(), file)
+    file_path <- file.path("./donnees", file)
     data <- read.csv(file_path, header = TRUE)  
     data_list[[file]] <- data
   }
