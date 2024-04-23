@@ -32,7 +32,7 @@ source("./fonctions/Fig4.R")
 # ===========================================
 # Dépendances
 csv_files <- list.files("./donnees", pattern = "\\.csv$")
-bd <- data.frame()
+
 
 # Scripts R
 
