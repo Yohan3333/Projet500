@@ -25,14 +25,4 @@ visreg::visreg(model3,
                cex.axis=0.8,
                cex.main=1.5)
 
-###BARPLOT OBS PARUL EN FCT DE LAT
-barplot(parul$x, 
-        names.arg = parul$Latitude,
-        main = "Abondance de parulines en fonction de la latitude", 
-        xlab = "Latitude", 
-        ylab = "Nombre d'observation",
-        col = "grey",
-        cex.lab=0.8,
-        cex.axis=0.8,
-        cex.main=1.5)  # Orientation des étiquettes de l'axe x à 90 degrés
 }

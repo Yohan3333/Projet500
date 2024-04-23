@@ -1,30 +1,20 @@
+#Création de fonction espèce/année
 creation_Fig3 = function(bd){
-###BD NB OBS PAR LATITUDE
-obsl2 <- as.data.frame(tapply(bd$species, bd$lat, function(x) length(x)))
-colnames(obsl2) <- "Nombre_observations"
-obsl2$Latitude <- rownames(obsl2)
+# Convertir la colonne de date en format Date
+bd$date_obs <- as.Date(bd$date_obs)
 
-###EN NUMERIC
-obsl2$Latitude <- as.numeric(obsl2$Latitude)
-obsl2$Nombre_observations <- as.numeric(obsl2$Nombre_observations)
-summary(obsl2)
+# Extraire l'année à partir de la colonne de date_obs
+bd <- bd %>%
+  mutate(annee = format(date_obs, "%Y"))
 
-###MODELE LINEAIRE
-model2 <- lm(Nombre_observations ~ Latitude, data = obsl2)
-summary(model2)
-visreg::visreg(model2)
+# Regrouper les données par année et compter le nombre d'espèces uniques pour chaque année
+nombre_especes_par_annee <- bd %>%
+  group_by(annee) %>%
+  summarise(nombre_especes = n_distinct(valid_scientific_name))
 
-###COURBE DU MODELE
-plot(visreg::visreg(model2), ylim = c(0, max(obsl2$Nombre_observations)))
-png("./Figures/Fig3.png")
-###BARPLOT OBS EN FCT DE LAT
-barplot(obsl2$Nombre_observations, 
-        names.arg = obsl2$Latitude,
-        main = "Nombre d'observations par latitude", 
-        xlab = "Latitude", 
-        ylab = "Nombre d'observation",
-        col = "skyblue",
-        ylim = c(0, max(obsl2$Nombre_observations) + 1),
-        las = 2)  # Orientation des étiquettes de l'axe x à 90 degrés
-dev.off()
+# Créer le graphique
+ggplot(nombre_especes_par_annee, aes(x = annee, y = nombre_especes)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  labs(x = "Année", y = "Nombre d'espèces uniques", title = "Nombre d'espèces uniques par année") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotation des étiquettes sur l'axe des x
 }
