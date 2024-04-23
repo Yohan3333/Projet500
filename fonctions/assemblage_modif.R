@@ -1,7 +1,8 @@
 ###SCRIPT assemblage
 
 read_d <- function(cvs_files){
-
+  
+  csv_files <- list.files("./donnees", pattern = "\\.csv$")
   data_list <- list()
   
   for (file in csv_files) {

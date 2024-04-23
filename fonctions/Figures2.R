@@ -1,3 +1,4 @@
+creation_Fig2 = function(bd){
 ###PARULINE EN FCT DE LA LAT
 parul <- as.data.frame(tapply(bd$family[bd$family == "Parulidae"], bd$lat[bd$family == "Parulidae"], length))
 colnames(parul) <- "Nombre_parulidae"
@@ -34,4 +35,4 @@ barplot(parul$x,
         cex.lab=0.8,
         cex.axis=0.8,
         cex.main=1.5)  # Orientation des étiquettes de l'axe x à 90 degrés
-
+}
