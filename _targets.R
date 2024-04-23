@@ -19,13 +19,8 @@ library(taxize)
 library(RSQLite)
 library(stringr)
 # ===========================================
-# _targets.R file
 source("./fonctions/assemblage_modif.R")
-<<<<<<< HEAD
-#source("./fonctions/nettoyage.R")
-=======
 source("./fonctions/nettoyage.R")
->>>>>>> c43b5c88c67eba9ec2b0ca5d6ac8a574c3cf81d0
 #source("./fonctions/assemblage_tsn.R")
 #source("./fonctions/Table.R")
 #source("./fonctions/Valid_SQL.R")
