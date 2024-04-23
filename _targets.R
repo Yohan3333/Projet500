@@ -83,6 +83,7 @@ list(
   ),
   tar_render(
     name = Rapport,
-    path = "./rapport/rapport.rmd"
+    path = "./rapport/rapport.rmd",
+    depends = Fig2
   )
 )
