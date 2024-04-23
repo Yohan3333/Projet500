@@ -65,15 +65,15 @@ list(
     command = validation_sql(table_sql)
   ),
   tar_target(
-    name = Fig2,
+    name = Fig1,
+    command = creation_Fig1(bd_tsn)
+  ),
+  tar_target(
+    name=Fig2,
     command = creation_Fig2(bd_tsn)
   ),
   tar_target(
     name=Fig3,
     command = creation_Fig3(bd_tsn)
-  ),
-  tar_target(
-    name=Fig4,
-    command = creation_Fig4(bd_tsn)
   )
 )
