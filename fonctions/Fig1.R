@@ -1,6 +1,6 @@
-library(ggplot2)
-library(dplyr)
+# Céation de fonction pour figure espèce/latitude
 
+creation_Fig1 = function(bd){
 # Supprimer les doublons en regroupant les données par latitude et en prenant une seule espèce par latitude
 donnees_nettoyees_lat <- bd %>%
   group_by(lat) %>%
@@ -12,6 +12,6 @@ ggplot(donnees_nettoyees_lat, aes(x = lat, y = espece_unique)) +
   geom_smooth(method = "lm", se = FALSE) + # Ajout de la régression linéaire sans intervalle de confiance
   labs(x = "Latitude", y = "Nombre d'espèces uniques",
        title = "Nombre d'espèces uniques par latitude")
-
+}
 
              
