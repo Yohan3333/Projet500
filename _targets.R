@@ -21,15 +21,16 @@ library(RSQLite)
 library(stringr)
 library(rmarkdown)
 # ===========================================
-source("./fonctions/assemblage_modif.R")
-source("./fonctions/nettoyage.R")
-source("./fonctions/assemblage_tsn.R")
-source("./fonctions/Table.R")
-source("./fonctions/Valid_SQL.R")
-source("./fonctions/Fig1.R")
-source("./fonctions/Fig2.R")
-source("./fonctions/Fig3.R")
-source("./fonctions/Fig4.R")
+source("./Script/assemblage_modif.R")
+source("./Script/nettoyage.R")
+source("./Script/assemblage_tsn.R")
+source("./Script/Table.R")
+source("./Script/Valid_SQL.R")
+source("./Script/Fig1.R")
+source("./Script/Fig2.R")
+source("./Script/Fig3.R")
+source("./Script/Fig4.R")
+#source("./rapport/rapport.rmd")
 # ===========================================
 # Dépendances
 
@@ -80,10 +81,10 @@ list(
   tar_target(
     name=Fig4,
     command = creation_Fig4(bd_tsn)
-  ),
-  tar_render(
-    name = Rapport,
-    path = "./rapport/rapport.rmd"
   )
+ # tar_render(
+  #  name = Rapport,
+  #  path = "./rapport/rapport.rmd"
+  #)
 )
 

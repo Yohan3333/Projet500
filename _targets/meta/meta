@@ -12,19 +12,19 @@ chemin_donnees|stem|fb3c1bf38deb4cdc|aa34093bc09b6e76|a08d0b0296b87c67|132311140
 create_sql|function|a17f140c9581e3db|||||||||||||||
 creation_Fig1|function|18abe1aec7e4fa81|||||||||||||||
 creation_Fig2|function|87b1c88b5ce6f09b|||||||||||||||
-creation_Fig3|function|768321390adc7f9d|||||||||||||||
-creation_Fig4|function|736a443e03bf24e7|||||||||||||||
+creation_Fig3|function|dab2c307f0e9cbb7|||||||||||||||
+creation_Fig4|function|6f8211d151c30414|||||||||||||||
 csv_files|object|8edb4ce545743b62|||||||||||||||
 donnees|stem|da7e5646cbdfced7|c5c047587881c685|ef46db3751d8e999|-1375965411||t0s|f4066a65ff755f48|0|file|local|vector|||0||
 Fig1|stem|1fff8b5c2c72e54a|dfcb8b4b58fe6dd4|2c8f8454fc494c44|-1075292869||t19836.8866792177s|f50f9fb93e1c2938|71|rds|local|vector|||4.07||
 Fig2|stem|80ae870265b9500a|8df687f57e5199f8|ced5667fb4f5d8c0|356038342||t19836.8866814377s|988429bb6428792b|83|rds|local|vector|||0.15||
-Fig3|stem|a25b797dbf95cf33|7b061b23d5eafbc1|bb27b5a926f67c16|-1551562388||t19836.8867002372s|db2361de2073f9e4|61|rds|local|vector|||1.55||
-Fig4|stem|9803d99a97e6bcd7|17656628260c9674|e2e6029b4d77e382|1866975415||t19836.8867060201s|d22c29dc585b97b0|78|rds|local|vector|||0.36||
+Fig3|stem|c5a3d224415399a6|7b061b23d5eafbc1|5f799c3cd6dbf353|-1551562388||t19836.9656608342s|f50f9fb93e1c2938|71|rds|local|vector|||0.92||
+Fig4|stem|9803d99a97e6bcd7|17656628260c9674|9017f4abe95045eb|1866975415||t19836.9656631807s|d22c29dc585b97b0|78|rds|local|vector|||0.17||
 file_paths|stem|cee449625cb222b5|71948d4e0817f43c|9a871ae21d2c4747|-1262214154||t19830.8355027265s|f2db86ed4ba2edc3|5959|rds|local|vector|||0.01||
 nettoy|function|3dc3809dc14bcbd9|||||||||||||||
 path|stem|02435cdd36e733fc|43d91ae27d35e3ad|ef46db3751d8e999|1488123031|./donnees|t19830.8226908062s|17b645ff1d8b6b2e|786432|file|local|vector|||0||
 path_files|stem|cee449625cb222b5|903564693cb2dad2|9a871ae21d2c4747|2110486947||t19830.8423174424s|f2db86ed4ba2edc3|5959|rds|local|vector|||0.02||
-Rapport|stem|d1ae156ba08da500|7a2bb368c5bf2554|2c530c1562a7fbd1|-254376993|rapport/rapport.html*rapport/rapport.rmd|t19836.884878902s||761826|file|local|vector|||74.3||LaTeX failed to compile rapport.tex. See httpsyihui.orgtinytexrdebugging for debugging tips. See rapport.log for more info.
+Rapport|stem|d1ae156ba08da500|7a2bb368c5bf2554|2c530c1562a7fbd1|-254376993|rapport/rapport.html*rapport/rapport.rmd|t19836.884878902s||761826|file|local|vector|||74.34||LaTeX failed to compile rapport.tex. See httpsyihui.orgtinytexrdebugging for debugging tips. See rapport.log for more info.
 read_d|function|9b8499dce7cdb2cc|||||||||||||||
 table_sql|stem|b4fb00f320ed46a6|98840041455db89c|94a436d6f0c8181c|-1840868723||t19836.8867147714s|ba41eabafff2540f|48|rds|local|vector|||0.72|Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows|
 valid_sql|stem|b4fb00f320ed46a6|862b7b6e90adc904|4af394fd74aaaef6|-209517275||t19836.8868184169s|ba41eabafff2540f|48|rds|local|vector|||8.92||
