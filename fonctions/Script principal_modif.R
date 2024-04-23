@@ -33,3 +33,6 @@ source("./fonctions/Table.R")
 #8) validation des tables sql
 source("./fonctions/Valid_SQL.R")
 
+#9) figures
+source("./fonctions/Figures2.R")
+
