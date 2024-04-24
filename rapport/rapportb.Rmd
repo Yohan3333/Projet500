@@ -11,10 +11,13 @@ output: pdf_document
 ---
 ## Résumé 
 
-This study investigates the abundance of birds from Northern to Southern 
-Quebec. We analyze the distribution patterns of various bird species and assess 
-their diversity across different ecological regions. Our findings highlight the
-importance of conservation efforts in preserving avian biodiversity in Quebec.
+Le Québec, vaste territoire aux paysages diversifiés, abrite une richesse 
+aviaire remarquable, offrant aux scientifiques un terrain de jeu parfait pour 
+étudier la faune aviaire. De la région nordique jusqu'aux terres plus 
+méridionales, les oiseaux du Québec fascinent par leur variété et leur 
+adaptation à des habitats variés. Dans ce rapport, nous explorerons l’abondance,
+la richesse spécifique et la densité d’une centaine oiseaux migrateurs et 
+indigènes du Québec. 
 
 ## Introduction
 
@@ -169,7 +172,8 @@ https://ebird.org/region/CA-QC/post/les-oiseaux-du-quebec-en-declin-vraiment
 
 Dubé, C., (2023). Protocole d’inventaire acoustique multiespèce avec appareil 
 Song Meter Mini Bat (SMMB). Ministère de l’Environnement, de la Lutte contre 
-les changements climatiques, de la Faune et des Parcs (MELCCFP). https://mffp.gouv.qc.ca/documents/faune/protocole-inventaire-acoustique-multiespece.pdf 
+les changements climatiques, de la Faune et des Parcs (MELCCFP). https://mffp.gouv.qc.ca/documents/faune/protocole-inventaire-acoustique-
+multiespece.pdf 
 
 Gahbauer MA, Parker SR, Wu JX, Harpur C, Bateman BL, et al. (2022) Projected 
 changes in bird assemblages due to climate change in a Canadian system of 
