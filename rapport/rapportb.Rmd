@@ -104,11 +104,3 @@ bd_tsn <- tar_read(bd_tsn)
 creation_Fig3(bd_tsn)
 ```
 
-
-## Figure 4
-
-```{r Fig4, echo=FALSE}
-bd_tsn <- tar_read(bd_tsn)
-creation_Fig4(bd_tsn)
-```
-
