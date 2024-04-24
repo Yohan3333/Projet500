@@ -30,7 +30,6 @@ source("./Script/Fig1.R")
 source("./Script/Fig2.R")
 source("./Script/Fig3.R")
 source("./Script/Fig4.R")
-source("./rapport/rapport.Rmd")
 # ===========================================
 # Dépendances
 
@@ -82,10 +81,9 @@ list(
     name=Fig4, #Création de la figure 4
     command = creation_Fig4(bd_tsn)
   ),
-  tar_target(
+  tar_render(
     name = Rapport, # Création du rapport Rmarkdown
-    path = render("./rapport/rapport.Rmd"),
-    depends_on = c(Fig1, Fig2, Fig3, Fig4)
+    path = "./rapport/rapport.Rmd"
   )
 )
 
