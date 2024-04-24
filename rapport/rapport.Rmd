@@ -9,13 +9,9 @@ author:
     affiliation: "labfXXXX"
   - name: "Aurel Veillet"
     affiliation: "veiaXXXX"
-output: 
-  pdf_document: 
-    toc: true
----
-Résumé: 
-  Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text.
 
+Résumé: |
+  This study investigates the abundance of birds from Northern to Southern Quebec. We analyze the distribution patterns of various bird species and assess their diversity across different ecological regions. Our findings highlight the importance of conservation efforts in preserving avian biodiversity in Quebec.
 
 Significance: |
   Ce travail a été réalisé dans le cadre du cours BOT500 par des étudiants au BAC en écologie.
@@ -25,20 +21,14 @@ keywords:
   - Paruline
   - Québec
 
-## must be one of: pnasresearcharticle (usual two-column layout), pnasmathematics (one column layout), or pnasinvited (invited submissions only)
 pnas_type: pnasresearcharticle
-
 bibliography: pnas-sample.bib
 csl: pnas.csl
-
-## change to true to add optional line numbering
 lineno: false
 
-output: rticles::pnas_article
+output:
+  pdf_document:
+    toc: true
+  pnas_article:
+    lineno: false
 ---
-
-
-<!-- Leave these lines as they are at the end of your .Rmd file to ensure placement of methods & acknowledgements sections before the references-->
-\showmatmethods
-\showacknow
-\pnasbreak
