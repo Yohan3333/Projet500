@@ -57,7 +57,7 @@ Les données utilisées dans ce travail représentent la composition et la
 phénologie sonore des oiseaux au Québec, recueillies dans le cadre d'un 
 programme de surveillance de la biodiversité acoustique mené par le ministère 
 de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune
-et des Parcs (MELCCFP), dans le contexte du Réseau de suivi de la biodiversité 
+et des Parcs (@noauthor_reseau_nodate), dans le contexte du Réseau de suivi de la biodiversité 
 du Québec. Elles répertorient les observations sonores des oiseaux. Les 
 inventaires acoustiques sont réalisés au moyen d'enregistreurs sonores qui 
 capturent les cris et les chants des oiseaux. Ces enregistrements représentent 
@@ -125,7 +125,7 @@ tempéré du sud du Québec favorise l’abondance et la répartition d’oiseau
 que le climat davantage froid et rude du nord du Québec aurait tendance à 
 limiter l’abondance des oiseaux.Cependant cette tendance risque de changer 
 drastiquement avec l’augmentation des températures au Québec ce qui favorisera 
-la migration des espèces davantage vers le nord (Gahbauer, et al., 2022). 
+la migration des espèces davantage vers le nord (@gahbauer_projected_2022). 
 
 La richesse spécifique est toujours importante lorsqu’on parle de biodiversité. 
 La richesse spécifique aviaire du Québec change beaucoup en fonction de la 
@@ -151,14 +151,14 @@ uniques de 2016 jusqu’en 2019 puis une forte baisse en 2020 de plus de 50
 espèces comparativement à l’année 2019. Cependant, selon la littérature, la 
 situation semblerait stable en 2019. En effet, la situation est loin d’être 
 catastrophique car, les tendances stipulent que 50% des espèces seraient en 
-hausse et 50% en déclin (Desrochers, 2019). Cependant, qu’est ce qui peut 
+hausse et 50% en déclin (@noauthor_oiseaux_nodate). Cependant, qu’est ce qui peut 
 expliquer la forte diminution du nombre d’espèces uniques en 2020? Plusieurs 
 explications sont mises de l’avant telles que la baisse de recensement d’oiseaux
 en raison du confinement dû à la COVID-19. Cependant, d’un point de vue 
 scientifique, une recherche explique que les oiseaux peuvent vivres un phénomène
 de périodicité.Par exemple, il existe des années semencières au Québec où la 
 production de graines et de cônes est plus importante chez les populations de 
-conifères et de plantes vivaces (Lacroix-Dubois, 2022). La production est 
+conifères et de plantes vivaces (@lacroix-dubois_periodicite_nodate). La production est 
 discontinue car les coûts énergétiques associés à une telle production dans une
 année donnée entraînent une diminution de la production l'année suivante. Par 
 exemple, c’est le cas dans les forêts boréales du Québec où les conifères 
@@ -168,23 +168,7 @@ En effet, les années de forte production permettent aux individus de se
 reproduire sur une période plus étendue l'année suivante, augmentant ainsi le
 nombre de couvées produites. Cependant, on observe ensuite une forte baisse de
 la reproduction au cours des années suivantes et cela aurait pu être le cas pour 
-l’année 2020 (Lacroix-Dubois, 2022).  
+l’année 2020 (@lacroix-dubois_periodicite_nodate).  
 
 ## Bibliographie
 
-Desrochers, A., (2019) Les oiseaux du Québec en déclin, vraiment? EBIRD QUÉBEC. 
-https://ebird.org/region/CA-QC/post/les-oiseaux-du-quebec-en-declin-vraiment 
-
-Dubé, C., (2023). Protocole d’inventaire acoustique multiespèce avec appareil 
-Song Meter Mini Bat (SMMB). Ministère de l’Environnement, de la Lutte contre 
-les changements climatiques, de la Faune et des Parcs (MELCCFP). https://mffp.gouv.qc.ca/documents/faune/protocole-inventaire-acoustique-
-multiespece.pdf 
-
-Gahbauer MA, Parker SR, Wu JX, Harpur C, Bateman BL, et al. (2022) Projected 
-changes in bird assemblages due to climate change in a Canadian system of 
-protected areas. PLOS ONE 17(1): e0262116.
-https://doi.org/10.1371/journal.pone.0262116 
-
-Lacroix-Dubois, N. (2022) La périodicité des populations d'oiseaux au Québec : 
-patrons et causes possibles Mémoire. Maîtrise en sciences forestières - 
-Université Laval. 37440.pdf (1.22 MB)
