@@ -30,7 +30,7 @@ source("./Script/Fig1.R")
 source("./Script/Fig2.R")
 source("./Script/Fig3.R")
 source("./Script/Fig4.R")
-#source("./rapport/rapport.rmd")
+source("./rapport/rapport.rmd")
 # ===========================================
 # Dépendances
 
@@ -81,10 +81,10 @@ list(
   tar_target(
     name=Fig4,
     command = creation_Fig4(bd_tsn)
+  ),
+  tar_render(
+    name = Rapport,
+    path = "./rapport/rapport.rmd"
   )
- # tar_render(
-  #  name = Rapport,
-  #  path = "./rapport/rapport.rmd"
-  #)
 )
 
