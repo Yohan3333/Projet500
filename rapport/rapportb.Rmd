@@ -25,15 +25,26 @@ summary(cars)
 bd_tsn <- tar_read(bd_tsn)
 creation_Fig1(bd_tsn)
 ```
-## Figure 3
 
-```{r Fig3, echo=FALSE}
-bd_tsn <- tar_read(bd_tsn)
-creation_Fig3(bd_tsn)
-```
 ## Figure 2
 
 ```{r Fig2, echo=FALSE}
 bd_tsn <- tar_read(bd_tsn)
 creation_Fig2(bd_tsn)
 ```
+
+## Figure 3
+
+```{r Fig3, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig3(bd_tsn)
+```
+
+
+## Figure 4
+
+```{r Fig4, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig4(bd_tsn)
+```
+
