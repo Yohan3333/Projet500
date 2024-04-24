@@ -24,6 +24,6 @@ creation_Fig4 = function(bd){
                       cex.lab=0.8,
                       cex.axis=0.8,
                       cex.main=1.5))
-  
+  print(Fig4)
   dev.off()
 }

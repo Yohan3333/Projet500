@@ -13,7 +13,7 @@ fig1 <- ggplot(donnees_nettoyees_lat, aes(x = lat, y = espece_unique)) +
   labs(x = "Latitude", y = "Nombre d'espèces uniques",
        title = "Nombre d'espèces uniques par latitude")
 #ggsave("./rapport/Fig1.png", plot = fig1, width = 10, height = 6, dpi = 300)
-print(fig1)
+print(Fig1)
 }
 
              
