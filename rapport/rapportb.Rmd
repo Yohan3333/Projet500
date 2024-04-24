@@ -10,13 +10,13 @@ date: "`r Sys.Date()`"
 output: pdf_document
 ---
 ## Résumé 
-"This study investigates the abundance of birds from Northern to Southern 
+This study investigates the abundance of birds from Northern to Southern 
 Quebec. We analyze the distribution patterns of various bird species and assess 
 their diversity across different ecological regions. Our findings highlight the
-importance of conservation efforts in preserving avian biodiversity in Quebec."
+importance of conservation efforts in preserving avian biodiversity in Quebec.
 ## Introduction
 
-"Afin de comprendre la dynamique de la biodiversité aviaire du Québec sur une 
+Afin de comprendre la dynamique de la biodiversité aviaire du Québec sur une 
 période donnée, nous avons établi une question générale composée de deux 
 sous-questions nous permettant d’y parvenir: Y a-t-il une corrélation entre la 
 richesse spécifique et l’abondance des espèces d’oiseaux au Québec? Quelle est 
@@ -43,11 +43,11 @@ informations importantes sur les schémas de migration, les cycles de
 reproduction et les fluctuations des populations, ce qui est crucial pour la
 conservation et la gestion des écosystèmes. En somme, ces questions cherchent 
 à éclairer les liens complexes entre la biodiversité aviaire, le temps et 
-l'environnement dans la région du Québec."
+l'environnement dans la région du Québec.
 
 ## Méthode
 
-"Les données utilisées dans ce travail représentent la composition et la 
+Les données utilisées dans ce travail représentent la composition et la 
 phénologie sonore des oiseaux au Québec, recueillies dans le cadre d'un 
 programme de surveillance de la biodiversité acoustique mené par le ministère 
 de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune
@@ -60,12 +60,11 @@ taxonomie qui identifie les espèces d'oiseaux enregistrées. Lorsque possible,
 l'heure de l'observation est également enregistrée (time_obs). Ainsi, ces 
 données ont été analysées grâce au logiciel R afin de créer des figures qui 
 représentent les résultats correspondant aux trois questions énoncées 
-ci-dessus."
-
+ci-dessus.
 ## Résultats
 
-"À la suite de la création d’une base de données et des analyses dans RStudio, 
-trois figures ont été créées afin de mieux répondre à nos questions."
+À la suite de la création d’une base de données et des analyses dans RStudio, 
+trois figures ont été créées afin de mieux répondre à nos questions.
 
 - La Figure 1 présente le nombre d’espèces présentes en fonction de la latitude 
 du Québec. La régression en bleu permet de voir la moyenne d’espèces uniques. 
