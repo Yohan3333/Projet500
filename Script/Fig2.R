@@ -14,15 +14,12 @@ creation_Fig2 = function(bd){
   model3 <- lm(x ~ Latitude, data = parul)
  
   ### Courbe OBS Parul en fct LAT
- print(visreg::visreg(model3,
+ print(visreg(model3,
                  xlab="Latitude",
                  ylab="Nombre de Parulidae",
                  ylim= c(0,max(parul$x)),
                  main=("Abondance de parulines en fonction de la latitude"),
                  cex.lab=0.8,
-                 cex.axis=0.8,
-                 cex.main=1.5))
-  print(Fig2)
-  dev.off()
+                 cex.axis=0.8))
 }
 
