@@ -24,7 +24,7 @@ file_paths|stem|cee449625cb222b5|71948d4e0817f43c|9a871ae21d2c4747|-1262214154||
 nettoy|function|3dc3809dc14bcbd9|||||||||||||||
 path|stem|02435cdd36e733fc|43d91ae27d35e3ad|ef46db3751d8e999|1488123031|./donnees|t19830.8226908062s|17b645ff1d8b6b2e|786432|file|local|vector|||0||
 path_files|stem|cee449625cb222b5|903564693cb2dad2|9a871ae21d2c4747|2110486947||t19830.8423174424s|f2db86ed4ba2edc3|5959|rds|local|vector|||0.02||
-Rapport|stem|00fb711e0f9a3a71|8c1eaf6da306d1f4|12663468f2a27ab8|-254376993|rapport/rapportb.pdf*rapport/rapportb.Rmd|t19837.6551540895s|5164c058a107967c|184658|file|local|vector|||5.39||
+Rapport|stem|00fb711e0f9a3a71|8c1eaf6da306d1f4|12663468f2a27ab8|-254376993|rapport/rapportb.pdf*rapport/rapportb.Rmd|t19837.6551540895s||184658|file|local|vector|||17.08||LaTeX failed to compile rapportb.tex. See httpsyihui.orgtinytexrdebugging for debugging tips. See rapportb.log for more info.
 read_d|function|9b8499dce7cdb2cc|||||||||||||||
 table_sql|stem|b4fb00f320ed46a6|98840041455db89c|94a436d6f0c8181c|-1840868723||t19837.6335959536s|ba41eabafff2540f|48|rds|local|vector|||0.27|Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows|
 valid_sql|stem|b4fb00f320ed46a6|862b7b6e90adc904|4af394fd74aaaef6|-209517275||t19837.1468409807s|ba41eabafff2540f|48|rds|local|vector|||8.06||
