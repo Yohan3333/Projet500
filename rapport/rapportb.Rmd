@@ -10,10 +10,12 @@ date: "`r Sys.Date()`"
 output: pdf_document
 ---
 ## Résumé 
+
 This study investigates the abundance of birds from Northern to Southern 
 Quebec. We analyze the distribution patterns of various bird species and assess 
 their diversity across different ecological regions. Our findings highlight the
 importance of conservation efforts in preserving avian biodiversity in Quebec.
+
 ## Introduction
 
 Afin de comprendre la dynamique de la biodiversité aviaire du Québec sur une 
