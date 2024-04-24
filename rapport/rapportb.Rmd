@@ -61,6 +61,7 @@ l'heure de l'observation est également enregistrée (time_obs). Ainsi, ces
 données ont été analysées grâce au logiciel R afin de créer des figures qui 
 représentent les résultats correspondant aux trois questions énoncées 
 ci-dessus."
+
 ## Résultats
 
 "À la suite de la création d’une base de données et des analyses dans RStudio, 
