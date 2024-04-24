@@ -1,5 +1,5 @@
 ---
-title: "Travail de session BOT500 - Une abondance d’oiseaux du Nord au Sud du 
+title: "Travail de session BIO500 - Une abondance d’oiseaux du Nord au Sud du 
         Québec"
 author: 
   - "Frédérick St-Pierre"
@@ -72,7 +72,7 @@ ci-dessus.
 À la suite de la création d’une base de données et des analyses dans RStudio, 
 trois figures ont été créées afin de mieux répondre à nos questions.
 
-- La Figure 1 présente le nombre d’espèces présentes en fonction de la latitude 
+- La @ref(Fig1) présente le nombre d’espèces présentes en fonction de la latitude 
 du Québec. La régression en bleu permet de voir la moyenne d’espèces uniques. 
 Les points présents dans la figure représentent chaque station d’écoute.
 
@@ -87,7 +87,7 @@ bd_tsn <- tar_read(bd_tsn)
 creation_Fig1(bd_tsn)
 ```
 
-- La Figure 2 présente l’abondance des observations de parulines, elle aussi en
+- La Figure 2 (@ref(Fig2)) présente l’abondance des observations de parulines, elle aussi en
 fonction de la latitude. Une régression, en bleu, avec l’incertitude, en gris,
 est observable.
 
@@ -98,7 +98,7 @@ bd_tsn <- tar_read(bd_tsn)
 creation_Fig2(bd_tsn)
 ```
 
-- La Figure 3 présente le nombre d’espèces uniques observées dans tous les sites
+- La Figure 3 (@ref(Fig3))présente le nombre d’espèces uniques observées dans tous les sites
 d’échantillonnages de l’étude pour chaque année, de 2016 à 2020."
 
 ## Figure 3
@@ -112,30 +112,30 @@ creation_Fig3(bd_tsn)
 
 En suivant l’abondance d’une seule famille d’oiseau, comme les parulines, il est
 possible de comprendre sa répartition et de confirmer des “hot spots”. En se 
-fiant à la figure 2, on observe que les parulines suivent une tendance négative
-en fonction de la latitude. Bien que l’incertitude de ces résultats soit très 
-large, il est certain que le sud du Québec soit plus abondant en paruline et il 
-est possible que cette famille disparaisse après le 58ième parallèle. Il est 
-important de mentionner qu’aucun relevé terrain a été fait entre les latitudes 
-51 et 55 comme il est possible de voir à la figure 1. Cette tendance d’abondance
-se maintenait pour l’entièreté des observations, ce qui correspond à la 
-littérature scientifique, puisque le climat tempéré du sud du Québec favorise 
-l’abondance et la répartition d’oiseaux alors que le climat davantage froid et 
-rude du nord du Québec aurait tendance à limiter l’abondance des oiseaux. 
-Cependant cette tendance risque de changer drastiquement avec l’augmentation 
-des températures au Québec ce qui favorisera la migration des espèces davantage
-vers le nord (Gahbauer, et al., 2022). 
+fiant à la figure 2 (@ref()), on observe que les parulines suivent une tendance
+négative en fonction de la latitude. Bien que l’incertitude de ces résultats 
+soit très large, il est certain que le sud du Québec soit plus abondant en 
+paruline et il est possible que cette famille disparaisse après le 58ième 
+parallèle. Il est important de mentionner qu’aucun relevé terrain a été fait 
+entre les latitudes 51 et 55 comme il est possible de voir à la figure 1. Cette 
+tendance d’abondance se maintenait pour l’entièreté des observations, ce qui 
+correspond à la littérature scientifique, puisque le climat tempéré du sud du 
+Québec favorise l’abondance et la répartition d’oiseaux alors que le climat 
+davantage froid et rude du nord du Québec aurait tendance à limiter l’abondance 
+des oiseaux.Cependant cette tendance risque de changer drastiquement avec 
+l’augmentation des températures au Québec ce qui favorisera la migration des 
+espèces davantage vers le nord (Gahbauer, et al., 2022). 
 
 La richesse spécifique est toujours importante lorsqu’on parle de biodiversité. 
 La richesse spécifique aviaire du Québec change beaucoup en fonction de la 
 latitude. Au sud, soit vers le 45ième parallèle, un peu plus de 70 espèces ont 
-été observées à une même station d’échantillonnage (figure 1). À l’autre 
+été observées à une même station d’échantillonnage (@ref(Fig1)). À l’autre 
 extrême, près du 61ième parallèle, on y retrouve seulement une dizaine d’espèces
 aviaires. Les conditions plus difficiles (froid, absence d’arbre, ressources 
 limités, etc) s’accentuant en fonction de la latitude créant ce gradient de 
-richesse spécifique. En comparant la courbe de la figure 1 et celle de la 
-figure 2, il semble avoir une forte corrélation entre le nombre d’espèce et 
-l’abondance. C’est deux courbes  
+richesse spécifique. En comparant la courbe de la figure 1 (@ref(Fig1)) et celle
+de la figure 2 (@ref(Fig2)), il semble avoir une forte corrélation entre le 
+nombre d’espèce et l’abondance. C’est deux courbes  
 
 Finalement, comme dans de nombreuses autres régions du monde, de nombreuses 
 espèces d'oiseaux migrateurs et résidents ont connu un déclin de leurs 
@@ -143,28 +143,28 @@ populations au Québec. Les changements climatiques, la perte d'habitat, la
 baisse du succès de reproduction et la hausse de la prédation des nids sont 
 parmi les facteurs qui peuvent contribuer à ces déclins bien que ces-derniers 
 soient très variables et difficiles à mesurer dans le temps. Ainsi, en observant
-la figure 3, on peut observer une augmentation du nombre d’espèces uniques de 
-2016 jusqu’en 2019 puis une forte baisse en 2020 de plus de 50 espèces 
-comparativement à l’année 2019. Cependant, selon la littérature, la situation 
-semblerait stable en 2019. En effet, la situation est loin d’être catastrophique
-car, les tendances stipulent que 50% des espèces seraient en hausse et 50% en 
-déclin (Desrochers, 2019). Cependant, qu’est ce qui peut expliquer la forte 
-diminution du nombre d’espèces uniques en 2020? Plusieurs explications sont 
-mises de l’avant telles que la baisse de recensement d’oiseaux en raison du 
-confinement dû à la COVID-19. Cependant, d’un point de vue scientifique, une 
-recherche explique que les oiseaux peuvent vivres un phénomène de périodicité. 
-Par exemple, il existe des années semencières au Québec où la production de 
-graines et de cônes est plus importante chez les populations de conifères et de 
-plantes vivaces (Lacroix-Dubois, 2022). La production est discontinue car les 
-coûts énergétiques associés à une telle production dans une année donnée 
-entraînent une diminution de la production l'année suivante. Par exemple, c’est 
-le cas dans les forêts boréales du Québec où les conifères présentent
-généralement des cycles de 2 à 3 ans. Ces fluctuations de production ont un 
-impact direct sur les espèces d'oiseaux qui dépendent de ces ressources. En 
-effet, les années de forte production permettent aux individus de se reproduire
-sur une période plus étendue l'année suivante, augmentant ainsi le nombre de 
-couvées produites. Cependant, on observe ensuite une forte baisse de la 
-reproduction au cours des années suivantes et cela aurait pu être le cas pour 
+la figure 3 (@ref(FIg3)), on peut observer une augmentation du nombre d’espèces 
+uniques de 2016 jusqu’en 2019 puis une forte baisse en 2020 de plus de 50 
+espèces comparativement à l’année 2019. Cependant, selon la littérature, la 
+situation semblerait stable en 2019. En effet, la situation est loin d’être 
+catastrophique car, les tendances stipulent que 50% des espèces seraient en 
+hausse et 50% en déclin (Desrochers, 2019). Cependant, qu’est ce qui peut 
+expliquer la forte diminution du nombre d’espèces uniques en 2020? Plusieurs 
+explications sont mises de l’avant telles que la baisse de recensement d’oiseaux
+en raison du confinement dû à la COVID-19. Cependant, d’un point de vue 
+scientifique, une recherche explique que les oiseaux peuvent vivres un phénomène
+de périodicité.Par exemple, il existe des années semencières au Québec où la 
+production de graines et de cônes est plus importante chez les populations de 
+conifères et de plantes vivaces (Lacroix-Dubois, 2022). La production est 
+discontinue car les coûts énergétiques associés à une telle production dans une
+année donnée entraînent une diminution de la production l'année suivante. Par 
+exemple, c’est le cas dans les forêts boréales du Québec où les conifères 
+présentent généralement des cycles de 2 à 3 ans. Ces fluctuations de production 
+ont un impact direct sur les espèces d'oiseaux qui dépendent de ces ressources. 
+En effet, les années de forte production permettent aux individus de se 
+reproduire sur une période plus étendue l'année suivante, augmentant ainsi le
+nombre de couvées produites. Cependant, on observe ensuite une forte baisse de
+la reproduction au cours des années suivantes et cela aurait pu être le cas pour 
 l’année 2020 (Lacroix-Dubois, 2022).  
 
 ## Bibliographie
