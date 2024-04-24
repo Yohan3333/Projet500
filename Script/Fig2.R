@@ -14,17 +14,15 @@ creation_Fig2 = function(bd){
   ###Courbe de tendance
   model3 <- lm(x ~ Latitude, data = parul)
  
-  
-  png("./rapport/Figure2.png", width=1000, height=600)
   ### Courbe OBS Parul en fct LAT
-  visreg::visreg(model3,
+ print(visreg::visreg(model3,
                  xlab="Latitude",
                  ylab="Nombre de Parulidae",
                  ylim= c(0,max(parul$x)),
                  main=("Abondance de parulines en fonction de la latitude"),
                  cex.lab=0.8,
                  cex.axis=0.8,
-                 cex.main=1.5)
-  dev.off()
+                 cex.main=1.5))
+  
 }
 
