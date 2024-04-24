@@ -1,5 +1,5 @@
 ---
-title: "Travail de session BOT500 - Une abondance d’oiseaux du Nord au Sud du 
+title: "Travail de session BIO500 - Une abondance d’oiseaux du Nord au Sud du 
         Québec"
 author: 
   - "Frédérick St-Pierre"
