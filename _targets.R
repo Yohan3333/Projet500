@@ -31,7 +31,6 @@ source("./Script/Valid_SQL.R")
 source("./Script/Fig1.R")
 source("./Script/Fig2.R")
 source("./Script/Fig3.R")
-source("./Script/Fig4.R")
 # ===========================================
 # Dépendances
 
