@@ -80,43 +80,45 @@ Les points présents dans la figure représentent chaque station d’écoute.
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+##Figure 1:
+
 ```{r Fig1, echo=FALSE}
 bd_tsn <- tar_read(bd_tsn)
 creation_Fig1(bd_tsn)
 ```
-## Figure 1: Nombre d'espèces présentes en fonction de la latitude{#Fig1}
 
 - La Figure 2 (@ref(fig:Fig2)) présente l’abondance des observations de parulines, elle aussi en
 fonction de la latitude. Une régression, en bleu, avec l’incertitude, en gris,
 est observable.
 
+## Figure 2:
+
 ```{r Fig2, echo=FALSE}
 bd_tsn <- tar_read(bd_tsn)
 creation_Fig2(bd_tsn)
 ```
-## Figure 2: Abondance de parulines en fonction de la latitude{#Fig2}
 
-- La Figure 3 (@ref(fig: Fig3))présente le nombre d’espèces uniques observées dans tous les sites
+- La Figure 3 présente le nombre d’espèces uniques observées dans tous les sites
 d’échantillonnages de l’étude pour chaque année, de 2016 à 2020."
 
+## Figure 3:
 
 ```{r Fig3, echo=FALSE}
 bd_tsn <- tar_read(bd_tsn)
 creation_Fig3(bd_tsn)
 ```
-## Figure 3: Nombre d'espèces en fonction de la latitude {#Fig3}
 
 ## Discussion
 
 En suivant l’abondance d’une seule famille d’oiseau, comme les parulines, il est
 possible de comprendre sa répartition et de confirmer des “hot spots”. En se 
-fiant à la figure 2 (@ref(fig:Fig2)), on observe que les parulines suivent une 
+fiant à la figure 2, on observe que les parulines suivent une 
 tendance négative en fonction de la latitude. Bien que l’incertitude de ces 
 résultats soit très large, il est certain que le sud du Québec soit plus 
 abondant en paruline et il est possible que cette famille disparaisse après le 
 58ième parallèle. Il est important de mentionner qu’aucun relevé terrain a été 
-fait entre les latitudes 51 et 55 comme il est possible de voir à la figure 1 
-(@ref(fig:Fig1). Cette tendance d’abondance se maintenait pour l’entièreté des 
+fait entre les latitudes 51 et 55 comme il est possible de voir à la figure 1.
+Cette tendance d’abondance se maintenait pour l’entièreté des 
 observations, ce qui correspond à la littérature scientifique, puisque le climat
 tempéré du sud du Québec favorise l’abondance et la répartition d’oiseaux alors
 que le climat davantage froid et rude du nord du Québec aurait tendance à 
@@ -127,13 +129,15 @@ la migration des espèces davantage vers le nord (Gahbauer, et al., 2022).
 La richesse spécifique est toujours importante lorsqu’on parle de biodiversité. 
 La richesse spécifique aviaire du Québec change beaucoup en fonction de la 
 latitude. Au sud, soit vers le 45ième parallèle, un peu plus de 70 espèces ont 
-été observées à une même station d’échantillonnage (@ref(fig:Fig1)). À l’autre 
+été observées à une même station d’échantillonnage (figure 1). À l’autre 
 extrême, près du 61ième parallèle, on y retrouve seulement une dizaine d’espèces
 aviaires. Les conditions plus difficiles (froid, absence d’arbre, ressources 
 limités, etc) s’accentuant en fonction de la latitude créant ce gradient de 
-richesse spécifique. En comparant la courbe de la figure 1 (@ref(fig:Fig1)) et 
-celle de la figure 2 (@ref(fig:Fig2)), il semble avoir une forte corrélation 
-entre le nombre d’espèce et l’abondance. C’est deux courbes  
+richesse spécifique. En comparant la courbe de la figure 1 et celle de la figure
+2, il semble avoir une forte corrélation entre le nombre d’espèce et
+l’abondance. C’est deux courbes sont similaires puisque les parulines étaient de
+loin l'espèce avec le plus grand nombre d'observations et de nombre d'espèces
+observée ce qui a un effet sur la tendance globale.
 
 Finalement, comme dans de nombreuses autres régions du monde, de nombreuses 
 espèces d'oiseaux migrateurs et résidents ont connu un déclin de leurs 
