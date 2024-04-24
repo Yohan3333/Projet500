@@ -30,7 +30,11 @@ source("./Script/Fig1.R")
 source("./Script/Fig2.R")
 source("./Script/Fig3.R")
 source("./Script/Fig4.R")
+<<<<<<< HEAD
 source("./rapport/rapport.Rmd")
+=======
+source("./rapport/rapport.rmd")
+>>>>>>> 5f64c3a0f72f2cb295731644cde7cc981195d0c2
 # ===========================================
 # Dépendances
 
@@ -83,8 +87,13 @@ list(
     command = creation_Fig4(bd_tsn)
   ),
   tar_render(
+<<<<<<< HEAD
     name = Rapport, # Création du rapport Rmarkdown
     path = "./rapport/rapport.Rmd"
+=======
+    name = Rapport,
+    path = "./rapport/rapport.rmd"
+>>>>>>> 5f64c3a0f72f2cb295731644cde7cc981195d0c2
   )
 )
 
