@@ -45,9 +45,9 @@ Enfin, la troisième question explore la variabilité saisonnière de la richess
 "À la suite de la création d’une base de données et des analyses dans RStudio, trois figures ont été créées afin de mieux répondre à nos questions."
 
 "Voici la base de données en question:"
-```r
+```{r}
 Base_donnees <- tar_read(bd_tsn)
-data.frame(bd_tsn)
+data.frame(Base_donnees)
 ```
 - La Figure 1 présente le nombre d’espèces présentes en fonction de la latitude du Québec. La régression en bleu permet de voir la moyenne d’espèces uniques. Les points présents dans la figure représentent chaque station d’écoute.
 
@@ -57,16 +57,16 @@ data.frame(bd_tsn)
 
 - La figure 4 présente
 ```
-![Figure 1: Nombre d'espèce en fonction de la latitude au Québec](./rapport/Fig1.png)
+![Figure 1: Nombre d'espèce en fonction de la latitude au Québec](./Projet500/rapport/Fig1.png)
 ```
 ```
-![Figure 2: Abondance de paruline en fonction de la latitude au Québec](./rapport/Figure2.png)
+![Figure 2: Abondance de paruline en fonction de la latitude au Québec](./Projet500/rapport/Figure2.png)
 ```
 ```
-![Figure 3: Nombre d'espèce uniques de tous les sites par année](./rapport/Fig3.png)
+![Figure 3: Nombre d'espèce uniques de tous les sites par année](./Projet500/rapport/Fig3.png)
 ```
 ```
-![Figure 4: Nombre d'espèce uniques de tous les sites par année](./rapport/Figure4.png)
+![Figure 4: Nombre d'espèce uniques de tous les sites par année](./Projet500/rapport/Figure4.png)
 ```
 --------------
 

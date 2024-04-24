@@ -82,9 +82,10 @@ list(
     name=Fig4, #Création de la figure 4
     command = creation_Fig4(bd_tsn)
   ),
-  tar_render(
+  tar_target(
     name = Rapport, # Création du rapport Rmarkdown
-    path = "./rapport/rapport.Rmd"
+    path = render("./rapport/rapport.Rmd"),
+    depends_on = c(Fig1, Fig2, Fig3, Fig4)
   )
 )
 
