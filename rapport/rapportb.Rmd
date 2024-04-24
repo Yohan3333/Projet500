@@ -73,7 +73,7 @@ ci-dessus.
 À la suite de la création d’une base de données et des analyses dans RStudio, 
 trois figures ont été créées afin de mieux répondre à nos questions.
 
-- La @ref(fig:Fig1) présente le nombre d’espèces présentes en fonction de la latitude 
+- La Figure 1 présente le nombre d’espèces présentes en fonction de la latitude 
 du Québec. La régression en bleu permet de voir la moyenne d’espèces uniques. 
 Les points présents dans la figure représentent chaque station d’écoute.
 
@@ -88,7 +88,7 @@ bd_tsn <- tar_read(bd_tsn)
 creation_Fig1(bd_tsn)
 ```
 
-- La Figure 2 (@ref(fig:Fig2)) présente l’abondance des observations de parulines, elle aussi en
+- La Figure 2 présente l’abondance des observations de parulines, elle aussi en
 fonction de la latitude. Une régression, en bleu, avec l’incertitude, en gris,
 est observable.
 
@@ -146,7 +146,7 @@ populations au Québec. Les changements climatiques, la perte d'habitat, la
 baisse du succès de reproduction et la hausse de la prédation des nids sont 
 parmi les facteurs qui peuvent contribuer à ces déclins bien que ces-derniers 
 soient très variables et difficiles à mesurer dans le temps. Ainsi, en observant
-la figure 3 (@ref(fig:Fig3)), on peut observer une augmentation du nombre d’espèces 
+la figure 3, on peut observer une augmentation du nombre d’espèces 
 uniques de 2016 jusqu’en 2019 puis une forte baisse en 2020 de plus de 50 
 espèces comparativement à l’année 2019. Cependant, selon la littérature, la 
 situation semblerait stable en 2019. En effet, la situation est loin d’être 
