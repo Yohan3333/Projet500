@@ -42,7 +42,7 @@ Enfin, la troisième question explore la variabilité saisonnière de la richess
 
 ## Résultats
 
-"À la suite de la création d’une base de données et des analyses dans RStudio, trois figures ont été créées afin de mieux répondre à nos questions.
+"À la suite de la création d’une base de données et des analyses dans RStudio, trois figures ont été créées afin de mieux répondre à nos questions."
 
 "Voici la base de données en question:"
 ```r
