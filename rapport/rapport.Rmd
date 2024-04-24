@@ -1,6 +1,7 @@
 ---
 title: "Travail de session BOT500 - Une abondance d’oiseaux du Nord au Sud du Québec"
 author:
+<<<<<<< HEAD
   - "Frédérick St-Pierre"
   - "Yohan Wegener"
   - "Félix Labbé"
@@ -10,10 +11,6 @@ output:
   pdf_document: 
     toc: true
 ---
-Résumé: 
-  Please provide an abstract of no more than 250 words in a single paragraph. Abstracts should explain to the general reader the major contributions of the article. References in the abstract must be cited in full within the abstract itself and cited in the text.
-
-
 Significance: 
   "Ce travail a été réalisé dans le cadre du cours BOT500 par des étudiants au BAC en écologie."
 
@@ -21,23 +18,23 @@ keywords:
   - "Diversité"
   - "Paruline"
   - "Québec"
-  ## must be one of: pnasresearcharticle (usual two-column layout), pnasmathematics (one column layout), or pnasinvited (invited submissions only)
+  
 pnas_type: pnasresearcharticle
-
 bibliography: pnas-sample.bib
 csl: pnas.csl
-
-## change to true to add optional line numbering
 lineno: false
 
-output: rticles::pnas_article
+output:
+  pdf_document:
+    toc: true
+  pnas_article:
 ---
 ## Résumé 
+"This study investigates the abundance of birds from Northern to Southern Quebec. We analyze the distribution patterns of various bird species and assess their diversity across different ecological regions. Our findings highlight the importance of conservation efforts in preserving avian biodiversity in Quebec."
 
 ## Introduction
 
-<<<<<<< HEAD
-"Afin de comprendre la dynamique de la biodiversité aviaire du Québec sur une période donnée, nous avons établi une question générale composée de deux sous-questions nous permettant d’y parvenir : Y a-t-il une corrélation entre la richesse spécifique et l’abondance des espèces d’oiseaux au Québec? Quelle est la tendance de la richesse aviaire spécifique du Québec de 2016 à 2020? Quelle est la tendance d'abondance selon la latitude?
+"Afin de comprendre la dynamique de la biodiversité aviaire du Québec sur une période donnée, nous avons établi une question générale composée de deux sous-questions nous permettant d’y parvenir: Y a-t-il une corrélation entre la richesse spécifique et l’abondance des espèces d’oiseaux au Québec? Quelle est la tendance de la richesse aviaire spécifique du Québec de 2016 à 2020? Quelle est la tendance d'abondance selon la latitude?
 
 La première question cherche à établir s'il existe une corrélation entre la richesse spécifique (le nombre total d'espèces) et l'abondance (la quantité relative de chaque espèce). Comprendre cette relation est crucial pour évaluer la santé globale d'un écosystème et comment il pourrait être affecté par des changements environnementaux.
 
@@ -84,3 +81,4 @@ data.frame(bd_tsn)
 \showmatmethods
 \showacknow
 \pnasbreak
+=======
