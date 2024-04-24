@@ -1,0 +1,66 @@
+---
+title: "Untitled"
+author: "À modifier"
+date: "`r Sys.Date()`"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Figure 1
+
+```{r Fig1, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig1(bd_tsn)
+```
+## Figure 3
+
+```{r Fig3, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig3(bd_tsn)
+```
+## Figure 2
+
+```{r Fig2, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig2 = function(bd){
+  ###PARULINE EN FCT DE LA LAT
+  parul <- as.data.frame(tapply(bd$family[bd$family == "Parulidae"], bd$lat[bd$family == "Parulidae"], length))
+  colnames(parul) <- "Nombre_parulidae"
+  parul$Latitude <- rownames(parul)
+  
+  ###En NUMERIC
+  parul$Nombre_parulidae <- as.numeric(parul$Nombre_parulidae)
+  parul$Latitude <- as.numeric(parul$Latitude)
+  parul$Latitude <- round(parul$Latitude, digits = 0)
+  parul <- as.data.frame(aggregate(parul$Nombre_parulidae, by = list(Latitude = parul$Latitude), FUN = sum))
+  
+  
+  ###Courbe de tendance
+  model3 <- lm(x ~ Latitude, data = parul)
+  
+  ### Courbe OBS Parul en fct LAT
+fig2 <- visreg::visreg(model3,
+                 xlab="Latitude",
+                 ylab="Nombre de Parulidae",
+                 ylim= c(0,max(parul$x)),
+                 main=("Abondance de parulines en fonction de la latitude"),
+                 cex.lab=0.8,
+                 cex.axis=0.8,
+                 cex.main=1.5)
+print(fig2)
+}
+creation_Fig2(bd_tsn)
+```
