@@ -69,7 +69,7 @@ list(
   ),
   tar_render(
     name = Rapport, # Création du rapport Rmarkdown
-    path = "./rapport/rapport.Rmd"
+    path = "./rapport/rapportb.Rmd"
   )
 )
 
