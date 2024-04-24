@@ -96,7 +96,9 @@ est observable.
 d’échantillonnages de l’étude pour chaque année, de 2016 à 2020."
 
 - La figure 4 présente
-
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
 ## Figure 1: Nombre d'espèce en fonction de la latitude au Québec
 ```{r Fig1, echo=FALSE}
 bd_tsn <- tar_read(bd_tsn)
