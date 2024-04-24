@@ -9,15 +9,13 @@ creation_Fig2 = function(bd){
   parul$Latitude <- as.numeric(parul$Latitude)
   parul$Latitude <- round(parul$Latitude, digits = 0)
   parul <- as.data.frame(aggregate(parul$Nombre_parulidae, by = list(Latitude = parul$Latitude), FUN = sum))
-  summary(parul)
+
   
   ###Courbe de tendance
   model3 <- lm(x ~ Latitude, data = parul)
-  summary(model3)
-  
-  png("./rapport/Figure2.png", width=1000, height=600)
+ 
   ### Courbe OBS Parul en fct LAT
-  visreg::visreg(model3,
+ print(visreg::visreg(model3,
                  xlab="Latitude",
                  ylab="Nombre de Parulidae",
                  ylim= c(0,max(parul$x)),
@@ -25,7 +23,7 @@ creation_Fig2 = function(bd){
                  cex.lab=0.8,
                  cex.axis=0.8,
                  cex.main=1.5)
-  print(Fig3)
+  print(Fig2)
   dev.off()
 }
 
