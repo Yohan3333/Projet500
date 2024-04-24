@@ -9,6 +9,58 @@ author:
 date: "`r Sys.Date()`"
 output: pdf_document
 ---
+## Résumé 
+"This study investigates the abundance of birds from Northern to Southern 
+Quebec. We analyze the distribution patterns of various bird species and assess 
+their diversity across different ecological regions. Our findings highlight the
+importance of conservation efforts in preserving avian biodiversity in Quebec."
+## Introduction
+
+"Afin de comprendre la dynamique de la biodiversité aviaire du Québec sur une 
+période donnée, nous avons établi une question générale composée de deux 
+sous-questions nous permettant d’y parvenir: Y a-t-il une corrélation entre la 
+richesse spécifique et l’abondance des espèces d’oiseaux au Québec? Quelle est 
+la tendance de la richesse aviaire spécifique du Québec de 2016 à 2020? Quelle 
+est la tendance d'abondance selon la latitude?
+
+La première question cherche à établir s'il existe une corrélation entre la 
+richesse spécifique (le nombre total d'espèces) et l'abondance (la quantité 
+relative de chaque espèce). Comprendre cette relation est crucial pour évaluer 
+la santé globale d'un écosystème et comment il pourrait être affecté par des 
+changements environnementaux.
+
+La deuxième question cherche à analyser la tendance de la richesse aviaire 
+spécifique dans la région du Québec au cours des années 2016 à 2020. Cette 
+analyse temporelle permettrait de détecter des changements survenus dans la 
+diversité des espèces aviaires au fil du temps, ce qui pourrait être lié à des 
+facteurs tels que le changement climatique, la dégradation de l'habitat ou 
+d'autres pressions environnementales.
+
+Enfin, la troisième question explore la variabilité saisonnière de la richesse 
+aviaire spécifique. La diversité des espèces aviaires varie tout au long de 
+l'année à la suite des changements de saison. Les résultats peuvent fournir des 
+informations importantes sur les schémas de migration, les cycles de 
+reproduction et les fluctuations des populations, ce qui est crucial pour la
+conservation et la gestion des écosystèmes. En somme, ces questions cherchent 
+à éclairer les liens complexes entre la biodiversité aviaire, le temps et 
+l'environnement dans la région du Québec."
+
+## Méthode
+
+"Les données utilisées dans ce travail représentent la composition et la 
+phénologie sonore des oiseaux au Québec, recueillies dans le cadre d'un 
+programme de surveillance de la biodiversité acoustique mené par le ministère 
+de l’Environnement, de la Lutte contre les Changements Climatiques, de la Faune
+et des Parcs (MELCCFP), dans le contexte du Réseau de suivi de la biodiversité 
+du Québec. Elles répertorient les observations sonores des oiseaux. Les 
+inventaires acoustiques sont réalisés au moyen d'enregistreurs sonores qui 
+capturent les cris et les chants des oiseaux. Ces enregistrements représentent 
+des efforts d'échantillonnage et sont ensuite analysés par un spécialiste en 
+taxonomie qui identifie les espèces d'oiseaux enregistrées. Lorsque possible, 
+l'heure de l'observation est également enregistrée (time_obs). Ainsi, ces 
+données ont été analysées grâce au logiciel R afin de créer des figures qui 
+représentent les résultats correspondant aux trois questions énoncées 
+ci-dessus."
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
