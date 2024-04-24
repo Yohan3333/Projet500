@@ -10,3 +10,5 @@
 # Pour effectuer automatiquement toutes les fonctions, utilisez le script R nommé
 # "_targets.R"
 # Merci!
+# Important de noter qu'Aurel n'a jamais pu avoir accès à GitHub de manière    #
+#fonctionnelle mais qu'il à tout de même fait ça part du travail.
