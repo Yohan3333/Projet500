@@ -81,7 +81,7 @@ Les points présents dans la figure représentent chaque station d’écoute.
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-##Figure 1:
+## Figure 1:
 
 ```{r Fig1, echo=FALSE}
 bd_tsn <- tar_read(bd_tsn)
