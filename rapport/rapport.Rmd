@@ -1,7 +1,6 @@
 ---
 title: "Travail de session BOT500 - Une abondance d’oiseaux du Nord au Sud du Québec"
 author:
-<<<<<<< HEAD
   - "Frédérick St-Pierre"
   - "Yohan Wegener"
   - "Félix Labbé"
@@ -23,11 +22,6 @@ pnas_type: pnasresearcharticle
 bibliography: pnas-sample.bib
 csl: pnas.csl
 lineno: false
-
-output:
-  pdf_document:
-    toc: true
-  pnas_article:
 ---
 ## Résumé 
 "This study investigates the abundance of birds from Northern to Southern Quebec. We analyze the distribution patterns of various bird species and assess their diversity across different ecological regions. Our findings highlight the importance of conservation efforts in preserving avian biodiversity in Quebec."
