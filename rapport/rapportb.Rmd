@@ -8,6 +8,7 @@ author:
   - "Aurel Veillet"
 date: "`r Sys.Date()`"
 output: pdf_document
+bibliography: bib.bib
 ---
 ## Résumé 
 
