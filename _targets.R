@@ -30,7 +30,7 @@ source("./Script/Fig1.R")
 source("./Script/Fig2.R")
 source("./Script/Fig3.R")
 source("./Script/Fig4.R")
-source("./rapport/rapport.rmd")
+source("./rapport/rapport.Rmd")
 # ===========================================
 # Dépendances
 
@@ -39,52 +39,52 @@ source("./rapport/rapport.rmd")
 
 list(
   tar_target(
-    name= chemin,
+    name= chemin,   #chemin vers les données
     command = "./donnees",
   ),
   tar_target(
-    name= chemin_donnees,
+    name= chemin_donnees, #Création d'une liste compilable de tous les fichiers csv
     command = list.files(chemin, pattern = "\\.csv$", full.names = T)
   ),
   tar_target(
-    name = bd_oiseaux,
+    name = bd_oiseaux, #Création d'une base de données avec les fichiers csv
     command = read_d(chemin_donnees)
   ),
   tar_target(
-    name = bd_clean,
+    name = bd_clean, # Nettoyage et validation de la base de données
     command = nettoy(bd_oiseaux)
   ),
   tar_target(
-    name = bd_tsn,
+    name = bd_tsn, #Création d'une nouvelle colonne avec les identifiants tsn des oiseaux
     command = ass_tsn(bd_clean)
   ),
   tar_target(
-    name= table_sql,
+    name= table_sql, #Création des tables SQL
     command = create_sql(bd_tsn)
   ),
   tar_target(
-    name= valid_sql,
+    name= valid_sql, #Validation des tables SQL
     command = validation_sql(table_sql)
   ),
   tar_target(
-    name = Fig1,
+    name = Fig1, #Création de la Figure 1
     command = creation_Fig1(bd_tsn)
   ),
   tar_target(
-    name=Fig2,
+    name=Fig2, #Création de la figure 2
     command = creation_Fig2(bd_tsn)
   ),
   tar_target(
-    name=Fig3,
+    name=Fig3, #Craétion de la figure 3
     command = creation_Fig3(bd_tsn)
   ),
   tar_target(
-    name=Fig4,
+    name=Fig4, #Création de la figure 4
     command = creation_Fig4(bd_tsn)
   ),
   tar_render(
-    name = Rapport,
-    path = "./rapport/rapport.rmd"
+    name = Rapport, # Création du rapport Rmarkdown
+    path = "./rapport/rapport.Rmd"
   )
 )
 
