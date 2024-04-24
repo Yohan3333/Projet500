@@ -16,7 +16,7 @@ nombre_especes_par_annee <- bd %>%
 # Créer le graphique
 fig3 <- ggplot(nombre_especes_par_annee, aes(x = annee, y = nombre_especes)) +
   geom_bar(stat = "identity", fill = "grey") +
-  labs(x = "Année", y = "Nombre d'espèces uniques", title = "Nombre d'espèces uniques par année") +
+  labs(x = "Année", y = "Nombre d'espèces uniques", title = "Figure 3: Nombre d'espèces uniques par année") +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotation des étiquettes sur l'axe des x
 #ggsave("./rapport/Fig3.png", plot = fig3, width = 10, height = 6, dpi = 300)
 print(fig3)
