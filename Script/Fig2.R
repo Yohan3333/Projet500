@@ -9,11 +9,11 @@ creation_Fig2 = function(bd){
   parul$Latitude <- as.numeric(parul$Latitude)
   parul$Latitude <- round(parul$Latitude, digits = 0)
   parul <- as.data.frame(aggregate(parul$Nombre_parulidae, by = list(Latitude = parul$Latitude), FUN = sum))
-  summary(parul)
+
   
   ###Courbe de tendance
   model3 <- lm(x ~ Latitude, data = parul)
-  summary(model3)
+ 
   
   png("./rapport/Figure2.png", width=1000, height=600)
   ### Courbe OBS Parul en fct LAT
