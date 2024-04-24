@@ -1,18 +1,18 @@
 name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
 2ddd1d21aba0491de225e7400b5238af0994e355|||||||||||||||||
 9f14da9c247a99c984cb3fcc0262569693f4d146|||||||||||||||||
-ass_tsn|function|19afa569ac6a3029|||||||||||||||
+ass_tsn|function|413c572a53cfcd58|||||||||||||||
 bd|stem|67e3bcd8537f6d6b|827e697fd7255565|32038b0cfaa30e20|2114031734||t19836.6302853886s|a1c456b03adbfbf8|44|rds|local|vector|||0.01||
-bd_clean|stem|103a947c42be8708|97799717f076bb5f|41be3f9bafca6092|-1388784645||t19837.1531532093s|788cdb2971692f75|412452|rds|local|vector|||0.42||
-bd_oiseaux|stem|8025919729cfc886|1a2b79cb9112a787|60f9a2b2b86ebdec|-1348489503||t19837.1531465083s|34105db3247a090f|462791|rds|local|vector|||14.22||
-bd_tsn|stem|5a74f4adebba330d|6ccc289de2df76ee|e07ba10bed3c19ff|-52914674||t19837.1548788767s|62b09f5edae9904d|216521|rds|local|vector|||148.94||
+bd_clean|stem|bb311e71a382d279|95f7d3d1242fd12c|1265873546da4521|-1388784645||t19837.6317861456s|282bacf86fd35cea|412453|rds|local|vector|||0.62||
+bd_oiseaux|stem|fe0b90992cc7966d|a203452916091c98|550575ba72ee401a|-1348489503||t19837.6317762651s|8ae827784f30ac04|462789|rds|local|vector|||19.63||
+bd_tsn|stem|4548e3d54438dd21|251d09028cbd0516|fb568ee7d45b3b1f|-52914674||t19837.6335108698s|063e911ac63aff6c|216521|rds|local|vector|||148.78||
 c43b5c88c67eba9ec2b0ca5d6ac8a574c3cf81d0|||||||||||||||||
-chemin|stem|567b68fcc3021cc3|43d91ae27d35e3ad|ef46db3751d8e999|-1006159306||t19837.1529792569s|e0224cf10db1a05d|62|rds|local|vector|||0||
-chemin_donnees|stem|9c114e3c238989c6|eab0cd7eb056002a|ab4ee7e5660e750d|1323111400||t19837.1529799051s|f2db86ed4ba2edc3|5959|rds|local|vector|||0.01||
-create_sql|function|da569e8026de1464|||||||||||||||
-creation_Fig1|function|167164fe8de01f68|||||||||||||||
-creation_Fig2|function|76a097bdf967be6c|||||||||||||||
-creation_Fig3|function|b19fc3b78c5a85fc|||||||||||||||
+chemin|stem|b2c22a4191d356be|7f598edc119dce1e|2c530c1562a7fbd1|-1006159306||t19837.6315439501s|08ec9a1d380611bb|62|rds|local|vector|||0.02||
+chemin_donnees|stem|fb3c1bf38deb4cdc|aa34093bc09b6e76|a08d0b0296b87c67|1323111400||t19837.6315448327s|1bb206c3c53b8021|5959|rds|local|vector|||0.02||
+create_sql|function|a17f140c9581e3db|||||||||||||||
+creation_Fig1|function|430bb25e31f62654|||||||||||||||
+creation_Fig2|function|5d59ccf540952685|||||||||||||||
+creation_Fig3|function|7a0fc4a6229042c4|||||||||||||||
 creation_Fig4|function|29d7572ede794c34|||||||||||||||
 csv_files|object|8edb4ce545743b62|||||||||||||||
 donnees|stem|da7e5646cbdfced7|c5c047587881c685|ef46db3751d8e999|-1375965411||t0s|f4066a65ff755f48|0|file|local|vector|||0||
@@ -21,11 +21,11 @@ Fig2|stem|80ae870265b9500a|8df687f57e5199f8|ced5667fb4f5d8c0|356038342||t19837.0
 Fig3|stem|c5a3d224415399a6|7b061b23d5eafbc1|5f799c3cd6dbf353|-1551562388||t19837.043843772s|f50f9fb93e1c2938|71|rds|local|vector|||1.01||
 Fig4|stem|9803d99a97e6bcd7|17656628260c9674|9017f4abe95045eb|1866975415||t19837.0438465253s|d22c29dc585b97b0|78|rds|local|vector|||0.21||
 file_paths|stem|cee449625cb222b5|71948d4e0817f43c|9a871ae21d2c4747|-1262214154||t19830.8355027265s|f2db86ed4ba2edc3|5959|rds|local|vector|||0.01||
-nettoy|function|5694e218a4dd24a5|||||||||||||||
+nettoy|function|3dc3809dc14bcbd9|||||||||||||||
 path|stem|02435cdd36e733fc|43d91ae27d35e3ad|ef46db3751d8e999|1488123031|./donnees|t19830.8226908062s|17b645ff1d8b6b2e|786432|file|local|vector|||0||
 path_files|stem|cee449625cb222b5|903564693cb2dad2|9a871ae21d2c4747|2110486947||t19830.8423174424s|f2db86ed4ba2edc3|5959|rds|local|vector|||0.02||
-Rapport|stem|38cbcee3bf70d559|0c7166365f208c94|731810e5bbce0e66|-254376993|rapport/rapportb.pdf*rapport/rapportb.Rmd|t19837.1549414233s|d2920cdb42afd1b6|168791|file|local|vector|||5.4||
-read_d|function|745d51097c70a436|||||||||||||||
-table_sql|stem|b4fb00f320ed46a6|6dfbd43d00d06db7|0ff7f98648b32d94|-1840868723||t19837.1467472152s||48|rds|local|vector|||0.05||table bd_site already exists
+Rapport|stem|343823951ce9f917|8c1eaf6da306d1f4|12663468f2a27ab8|-254376993|rapport/rapportb.pdf*rapport/rapportb.Rmd|t19837.6335923172s|0b23a43c5f27edcd|184197|file|local|vector|||7.06||
+read_d|function|9b8499dce7cdb2cc|||||||||||||||
+table_sql|stem|b4fb00f320ed46a6|98840041455db89c|94a436d6f0c8181c|-1840868723||t19837.6335959536s|ba41eabafff2540f|48|rds|local|vector|||0.27|Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows. Closing open result set, pending rows|
 valid_sql|stem|b4fb00f320ed46a6|862b7b6e90adc904|4af394fd74aaaef6|-209517275||t19837.1468409807s|ba41eabafff2540f|48|rds|local|vector|||8.06||
-validation_sql|function|2925356f6a501a21|||||||||||||||
+validation_sql|function|ee84a7ed0f6245b9|||||||||||||||
