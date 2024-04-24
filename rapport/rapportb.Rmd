@@ -1,6 +1,11 @@
 ---
-title: "Untitled"
-author: "À modifier"
+title: "Travail de session BOT500 - Une abondance d’oiseaux du Nord au Sud du 
+        Québec"
+author: 
+  - "Frédérick St-Pierre"
+  - "Yohan Wegener"
+  - "Félix Labbé"
+  - "Aurel Veillet"
 date: "`r Sys.Date()`"
 output: pdf_document
 ---
