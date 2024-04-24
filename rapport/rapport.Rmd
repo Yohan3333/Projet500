@@ -97,17 +97,29 @@ d’échantillonnages de l’étude pour chaque année, de 2016 à 2020."
 
 - La figure 4 présente
 
-![Figure 1: Nombre d'espèce en fonction de la latitude au Québec](/rapport/Fig1.png)
+## Figure 1: Nombre d'espèce en fonction de la latitude au Québec
+```{r Fig1, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig1(bd_tsn)
+```
 
+## Figure 2: Abondance de paruline en fonction de la latitude au Québec
+```{r Fig2, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig2(bd_tsn)
+```
 
-![Figure 2: Abondance de paruline en fonction de la latitude au Québec](./rapport/Figure2.png)
+## Figure 3: Nombre d'espèce uniques de tous les sites par année](./rapport/Fig3.png)
+```{r Fig3, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig3(bd_tsn)
+```
 
-
-![Figure 3: Nombre d'espèce uniques de tous les sites par année](./rapport/Fig3.png)
-
-
-![Figure 4: Nombre d'espèce uniques de tous les sites par année](./rapport/Figure4.png)
-
+##Figure 4: Nombre d'espèce uniques de tous les sites par année
+```{r Fig4, echo=FALSE}
+bd_tsn <- tar_read(bd_tsn)
+creation_Fig4(bd_tsn)
+```
 ---
 
 =======
