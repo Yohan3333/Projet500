@@ -20,12 +20,6 @@ creation_Fig2 = function(bd){
                  ylim= c(0,max(parul$x)),
                  main=("Abondance de parulines en fonction de la latitude"),
                  cex.lab=0.8,
-                 cex.axis=0.8,
-                 cex.main=1.5))
-<<<<<<< HEAD
-=======
-  print(Fig2)
-  dev.off()
->>>>>>> 3fb3038297ab17f7fad5116bfecc0f54eebf2380
+                 cex.axis=0.8))
 }
 
