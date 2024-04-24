@@ -10,7 +10,6 @@ creation_Fig2 = function(bd){
   parul$Latitude <- round(parul$Latitude, digits = 0)
   parul <- as.data.frame(aggregate(parul$Nombre_parulidae, by = list(Latitude = parul$Latitude), FUN = sum))
 
-  
   ###Courbe de tendance
   model3 <- lm(x ~ Latitude, data = parul)
  
